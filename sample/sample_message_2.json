@@ -1,0 +1,12 @@
+{
+    "type": "CollectorPostResMessage",
+    "sender": "http://127.0.0.1:5000/api/res-contents",
+    "msg": "timestamp-id of the collected set of IoT content",
+    "payload": {
+        "query": {
+            "sensor_type" : "temperature",
+            "current_temp" : "12"
+        }
+    },
+    "misc": null
+}

@@ -1,0 +1,14 @@
+{
+    "type": "DetectorGetResMessage",
+    "sender": "http://127.0.0.1:5000/api/new-res-ids",
+    "msg": "Invoked discovery process",
+    "payload": {
+        "res_ids": [
+            "http://gateway/res_1",
+            "http://gateway/res_2",
+            "http://gateway/res_3",
+            "http://gateway/res_4"
+        ]
+    },
+    "misc": null
+}
