@@ -5,7 +5,7 @@ Created on Wed Jan  3 13:15:52 2018
 
 @author: nguyentran
 """
-from abstract_services import AbsStorageService
+from lib.abstract_services import AbsStorageService
 
 class StorageService(AbsStorageService):
     def _insert(self, res_contents_url):

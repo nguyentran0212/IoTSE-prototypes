@@ -5,7 +5,7 @@ Created on Wed Jan  3 13:22:31 2018
 
 @author: nguyentran
 """
-from abstract_services import AbsSearchService
+from lib.abstract_services import AbsSearchService
 
 class SearchService(AbsSearchService):
     def _query(self, query):

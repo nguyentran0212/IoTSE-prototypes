@@ -6,7 +6,7 @@ Created on Tue Jan  2 18:27:34 2018
 @author: nguyentran
 """
 
-from abstract_services import AbsCollectorService
+from lib.abstract_services import AbsCollectorService
 import time
 import math
 

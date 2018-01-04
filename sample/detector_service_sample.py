@@ -6,7 +6,7 @@ Created on Tue Jan  2 18:06:56 2018
 @author: nguyentran
 """
 
-from abstract_services import AbsDetectorService
+from lib.abstract_services import AbsDetectorService
 
 class SampleData():
     def __init__(self):
