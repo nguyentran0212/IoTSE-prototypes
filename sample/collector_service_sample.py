@@ -21,8 +21,10 @@ class SampleData():
 sample_data = SampleData()
 
 class CollectorService(AbsCollectorService):
-    def _collect(self, urlList):
+    def _collect(self, urlList, wf_id = ""):
+#        with open("test_cookie.txt", "a") as f:
+#            f.write("From %s: %s\n" % (self, wf_id))
         return math.floor(time.time())
     
-    def _lookup(self, timestamp):
+    def _lookup(self, timestamp, wf_id = ""):
         return sample_data.iot_contents

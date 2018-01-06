@@ -16,5 +16,7 @@ class SampleData():
 sample_data = SampleData()
 
 class DetectorService(AbsDetectorService):
-    def _detect(self):
+    def _detect(self, wf_id = ""):
+#        with open("test_cookie.txt", "a") as f:
+#            f.write("From %s: %s\n" % (self, wf_id))
         return sample_data.res_ids

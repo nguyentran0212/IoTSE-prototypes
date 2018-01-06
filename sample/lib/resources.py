@@ -79,7 +79,7 @@ class NewResIDs(AbsResource):
         workflow_id = self.extract_workflow_id()
 #        with open("test_cookie.txt", "a") as f:
 #            f.write("From NewResIDs: %s \n" % workflow_id)
-        res_ids = self.service.detect()
+        res_ids = self.service.detect(wf_id = workflow_id)
         msg = messages.DetectorGetResMessage(request.url, "Invoked discovery process", res_ids, workflow_id = workflow_id)
         return msg.to_dict()
 
@@ -104,7 +104,7 @@ class ResContents(AbsResource):
             
         urlList = self.extract_from_payload("res_ids")
         
-        contentURL = self.service.collect(urlList, request.host)
+        contentURL = self.service.collect(urlList, request.host, wf_id = workflow_id)
 #        with open("simple_service_log.txt", "w") as file:
 #            file.write(str(urlList))
 #            file.write(str(contentURL))
@@ -130,7 +130,7 @@ class ResContent(AbsResource):
 #        with open("test_cookie.txt", "a") as f:
 #            f.write("From ResContent: %s\n" % workflow_id)
             
-        contents = self.service.lookup(timestamp)
+        contents = self.service.lookup(timestamp, wf_id = workflow_id)
         return messages.CollectorGetResMessage(request.url, "List of IoT content at the given timestamp", contents, workflow_id = workflow_id).to_dict()
 
 #==================================
@@ -150,7 +150,7 @@ class Resources(AbsResource):
         res_contents_url = self.extract_from_payload("res_contents_url")
         
         # Get content from URl and add to the database
-        self.service.insert(res_contents_url)
+        self.service.insert(res_contents_url, wf_id = workflow_id)
         
         return messages.StoragePostResMessage(request.url, workflow_id = workflow_id).to_dict() , 201
     
@@ -168,7 +168,7 @@ class Res(AbsResource):
 #        with open("test_cookie.txt", "a") as f:
 #            f.write("From Res: %s\n" % workflow_id)
             
-        return {"res" : self.service.getSingleResource(res_id)}
+        return {"res" : self.service.getSingleResource(res_id, wf_id = workflow_id)}
 
 #==================================
 # /api/queries
@@ -188,7 +188,7 @@ class Queries(AbsResource):
 #            f.write("From Queries: %s\n" % workflow_id)
             
         query = self.extract_from_payload("query")
-        result_url = self.service.query(query)
+        result_url = self.service.query(query, wf_id = workflow_id)
         return messages.SearcherPostQueryMessage(request.url, "Finished query. Find the result at the included URL", result_url, workflow_id = workflow_id).to_dict() , 201
     
 #==================================
@@ -208,5 +208,5 @@ class Result(AbsResource):
 #        with open("test_cookie.txt", "a") as f:
 #            f.write("From Result: %s\n" % workflow_id)
             
-        results = self.service.getResult(result_id)
+        results = self.service.getResult(result_id, wf_id = workflow_id)
         return messages.SearcherGetResultMessage(request.url, "Results", results, workflow_id = workflow_id).to_dict()
