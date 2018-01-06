@@ -54,13 +54,9 @@ class FacadeConductorClient(AbsConductorClient):
     """
     def __init__(self, host_addr, rest_endpoint):
         super().__init__(host_addr, rest_endpoint, "get_result")
-        self.task_service_func = self.retrieve_results
+        self.task_service_func = self.invoke_facade_service
     
-    def retrieve_results(self, task):
-        """
-        This might be called internally by the search engine facade instead of the conductor.
-        Leave here for demonstration purpose
-        """
-        r = requests.get("http://127.0.0.1:5000/api/results/asdf", cookies=self.get_workflow_instance_cookie(task))
-        result = r.json()
+    def invoke_facade_service(self, task):
+        send_data = task["inputData"]["iotse_msg"]
+        result = self.send_post_request(send_data, cookies=self.get_workflow_instance_cookie(task))
         return {'status': 'COMPLETED', 'output': {"iotse_msg" : result}, 'logs' : []}

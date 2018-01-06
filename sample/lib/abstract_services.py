@@ -189,3 +189,70 @@ class AbsSearchService(AbsService):
     @abstractmethod
     def _getResult(self, result_id, wf_id = ""):
         pass
+
+class AbsFacadeService(AbsService):
+    serv_type = "facade"
+    def __init__(self, search_workflow_name):
+        super().__init__(self.serv_type)
+        self.search_workflow_name = search_workflow_name
+        
+    def query(self, query, curr_host, wf_id = ""):
+        """
+        This function starts the query processing workflow,
+        retrieve workflow id, create a lookup dictionary between workflow_id
+        and url of the result, and generate a url for client to check
+        the status of the query
+        """
+    #    start_wf(wfName = "iotse_sample", inputjson = {"iotse_msg" : "Hello to IoTSE, from the conductor", 
+    #                                                   "query" : {"payload" : {
+    #                                                           "query" : {
+    #                                                                   "type" : "temperature", 
+    #                                                                   "value" : "30"
+    #                                                                   }
+    #                                                           }}})
+        query = {"query" : {"payload" : {"query" : query}}}    
+        wf_id = self._start_workflow(query)
+        self._add_wf_id_to_lookup(wf_id)
+        result_url = "%s/results/%s" % (curr_host, wf_id)
+        return result_url
+    
+    @abstractmethod
+    def _start_workflow(self):
+        """
+        Start a search workflow, and return the workflow instance id
+        """
+        pass
+    
+    @abstractmethod
+    def _add_wf_id_to_lookup(self, wf_id):
+        """
+        Add wf_id into a lookup data structure for future reference
+        """
+        pass
+    
+    @abstractmethod
+    def _retrieve_wf_id_from_lookup(self, wf_id):
+        """
+        Retrieve wf_id and result_url from a lookup data structure
+        """
+        pass
+    
+    @abstractmethod
+    def _update_wf_id_in_lookup(self, wf_id, result_url):
+        """
+        Update the result_url at the given wf_id
+        """
+        pass
+    
+    def getResult(self, result_id, wf_id = ""):
+        """
+        This function returns the set of results generated from a previous query
+        """
+        result_url = self._retrieve_wf_id_from_lookup(result_id)
+        if result_url == "":
+            result_url = "Not available. Please check later."
+        return result_url
+
+    def updateResult(self, wf_id, result_url):
+        self._update_wf_id_in_lookup(wf_id, result_url)
+        return "Finish updating status of the query %s" % wf_id

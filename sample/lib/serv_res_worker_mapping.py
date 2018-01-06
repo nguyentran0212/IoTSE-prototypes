@@ -22,7 +22,8 @@ mapping = {
         "detector" : ([("NewResIDs", rest_endpoints.new_res_ids)], [("DetectorConductorClient", rest_endpoints.new_res_ids)]),
         "collector" : ([("ResContents", rest_endpoints.res_contents), ("ResContent", rest_endpoints.res_content)], [("CollectorConductorClient", rest_endpoints.res_contents)]),
         "storage" : ([("Resources", rest_endpoints.resources), ("Res", rest_endpoints.resource)], [("StorageConductorClient", rest_endpoints.resources)]),
-        "search" : ([("Queries", rest_endpoints.queries), ("Result", rest_endpoints.results)], [("SearcherConductorClient", rest_endpoints.queries), ("FacadeConductorClient", rest_endpoints.results)])        
+        "search" : ([("Queries", rest_endpoints.queries), ("Result", rest_endpoints.results)], [("SearcherConductorClient", rest_endpoints.queries)]),
+        "facade" : ([("FacadeQueries", rest_endpoints.facade_queries), ("FacadeResultGet", rest_endpoints.facade_results_get), ("FacadeResultPost", rest_endpoints.facade_results_post)], [("FacadeConductorClient", rest_endpoints.facade_results_post)])        
         }
 
 """

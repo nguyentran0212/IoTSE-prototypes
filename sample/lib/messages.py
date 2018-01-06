@@ -91,6 +91,35 @@ class SearcherGetResultMessage(Message):
         super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("results", results)
     
+class FacadePostQueryMessage(Message):
+    """
+    Facade service uses this message to return the id of the result for 
+    client to poll and check
+    """
+    msg_type = "FacadePostQueryMessage"
+    def __init__(self, sender, msg, result_url_to_poll, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
+        self._add_payload("result_url", result_url_to_poll)
+        
+class FacadeGetResultMessage(Message):
+    """
+    Facade service uses this message to return the url of the result list
+    for client to retrieve
+    """
+    msg_type = "FacadeGetResultMessage"
+    def __init__(self, sender, msg, result_url_to_poll, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
+        self._add_payload("result_url", result_url_to_poll)
+        
+class FacadePostResultMessage(Message):
+    """
+    Facade service uses this message to notify the sender of the update
+    that it received and stored the sent URL of search results list
+    """
+    msg_type = "FacadePostResultMessage"
+    def __init__(self, sender, msg, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
+    
 if __name__ == "__main__":
     msg = DetectorGetResMessage("Detector Service 1", "This is a message!", ["Res1", "Res1", "Res1", "Res1"])
     print(msg.to_json())      

@@ -18,6 +18,8 @@ Created on Tue Jan  2 14:27:41 2018
 #import lib.serv_res_worker_mapping as mapping
 
 from lib.component_service_builder import ComponentServiceBuilder
+from importlib import import_module
+from lib.conductor_meta_client import ConductorMetaClient
 
 if __name__ == "__main__":
     cs_builder = ComponentServiceBuilder()

@@ -6,7 +6,7 @@ Created on Thu Jan  4 12:33:00 2018
 @author: nguyentran
 """
 
-from flask import Flask, request
+from flask import Flask, request, abort
 from flask_restful import Resource, Api, abort, reqparse
 import json
 import yaml
@@ -50,7 +50,7 @@ class AbsResource(Resource):
         value = request.cookies.get(key)
         return value
     
-    def extract_workflow_id(self, wf_id = "wf_id"):
+    def extract_workflow_id(self, wf_id = "wf_id", abort_req = False):
         """
         Extract workflow id from the cookie sent to this service
         """
@@ -59,8 +59,12 @@ class AbsResource(Resource):
             # If workflow id is available as a string, return as is
             return workflow_id
         else:
-            # otherwise, return an empty string
-            return ""
+            if abort_req:
+                # If abort flag is set, return error code and stop processing the request
+                abort(400)
+            else:
+                # otherwise, return an empty string
+                return ""
 
 
 #==================================
@@ -210,3 +214,62 @@ class Result(AbsResource):
             
         results = self.service.getResult(result_id, wf_id = workflow_id)
         return messages.SearcherGetResultMessage(request.url, "Results", results, workflow_id = workflow_id).to_dict()
+    
+#==================================
+# /queries
+#==================================
+class FacadeQueries(AbsResource):
+    """
+    Served by a facade service. It provides the entry point to the system for 
+    search clients
+    """
+    def post(self):
+        """
+        POST request to this resource sends a query and invoke the search process
+        It returns URL of the newly created result resource corresponding to the incoming query
+        """
+        
+        
+        workflow_id = self.extract_workflow_id()
+            
+        query = request.get_json(force=True)
+        result_url = self.service.query(query, request.host, wf_id = workflow_id)
+        msg = messages.FacadePostQueryMessage(request.url, "Finished query. Find the result at the included URL", result_url, workflow_id = workflow_id)
+        return msg.to_dict() , 201
+    
+#==================================
+# /results/<result_id>
+#==================================
+class FacadeResultGet(AbsResource):
+    """
+    Served by a facade service. It provides and endpoint for search clients
+    to retrieve the status of their submitted queries
+    """
+    def get(self, result_id):
+        """
+        GET request to this resource check the current state of the given query
+        and return the url of the server holding result list if it is available
+        """
+        workflow_id = self.extract_workflow_id()          
+        result_url = self.service.getResult(result_id, wf_id = workflow_id)
+        msg = messages.FacadeGetResultMessage(request.url, "Url of the result", result_url, workflow_id = workflow_id)
+        return msg.to_dict()
+    
+#==================================
+# /results
+#==================================
+class FacadeResultPost(AbsResource):
+    """
+    Served by a facade service. This endpoint accepts updates from other services
+    to update the state of a query under processing
+    """
+    def post(self):
+        """
+        POST request to this resource to update the URL pointing to the result list
+        of a processing query
+        """
+        workflow_id = self.extract_workflow_id(abort_req=True)
+        result_url = self.extract_from_payload("result_url")
+        msg_from_service = self.service.updateResult(workflow_id, result_url)
+        msg = messages.FacadePostResultMessage(request.url, msg_from_service, workflow_id = workflow_id)
+        return msg.to_dict()
