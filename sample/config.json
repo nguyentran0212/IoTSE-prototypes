@@ -1,0 +1,38 @@
+[
+    {"service" : 
+        {
+            "class" : "DetectorService",
+            "module" : "detector_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    },
+    {"service" : 
+        {
+            "class" : "CollectorService",
+            "module" : "collector_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    },
+    {"service" : 
+        {
+            "class" : "SearchService",
+            "module" : "search_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    },
+    {"service" : 
+        {
+            "class" : "StorageService",
+            "module" : "storage_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    }
+]
