@@ -1,0 +1,1 @@
+{"type": "DetectorGetResMessage", "sender": "http://127.0.0.1:5000/api/new-res-ids?wf_id=b4925a50-3e41-417b-b548-5d59f6ff3f8a", "msg": "Invoked discovery process", "payload": {"res_ids": ["http://gateway/res_1", "http://gateway/res_2", "http://gateway/res_3", "http://gateway/res_4"]}, "misc": null, "wf_id": "b4925a50-3e41-417b-b548-5d59f6ff3f8a"}

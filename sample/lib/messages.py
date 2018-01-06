@@ -13,9 +13,10 @@ from abc import ABC, abstractmethod
 import json
 
 class Message(ABC):
-    def __init__(self, msg_type, sender, msg):
+    def __init__(self, msg_type, sender, msg, workflow_id):
         self.type = msg_type
         self.sender = sender
+        self.workflow_id = workflow_id
         self.msg = msg
         self.payload = {}
         self.misc = None
@@ -35,8 +36,8 @@ class DetectorGetResMessage(Message):
     Collector uses this message as the input to its POST request on res-contents resource
     """
     msg_type = "DetectorGetResMessage"
-    def __init__(self, sender, msg, res_ids):
-        super().__init__(self.msg_type, sender, msg)
+    def __init__(self, sender, msg, res_ids, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("res_ids", res_ids)
 
         
@@ -46,8 +47,8 @@ class CollectorPostResMessage(Message):
     batch of IoT content
     """
     msg_type = "CollectorPostResMessage"
-    def __init__(self, sender, msg, res_contents_url):
-        super().__init__(self.msg_type, sender, msg)
+    def __init__(self, sender, msg, res_contents_url, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("res_contents_url", res_contents_url)
         
 class CollectorGetResMessage(Message):
@@ -58,8 +59,8 @@ class CollectorGetResMessage(Message):
     the given timestamp
     """
     msg_type = "CollectorGetResMessage"
-    def __init__(self, sender, msg, iot_contents):
-        super().__init__(self.msg_type, sender, msg)
+    def __init__(self, sender, msg, iot_contents, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("iot_contents", iot_contents)
     
 class StoragePostResMessage(Message):
@@ -68,16 +69,16 @@ class StoragePostResMessage(Message):
     to the database
     """
     msg_type = "StoragePostResMessage"
-    def __init__(self, sender):
-        super().__init__(self.msg_type, sender, "Finish inserting IoT content to storage")
+    def __init__(self, sender, workflow_id = ""):
+        super().__init__(self.msg_type, sender, "Finish inserting IoT content to storage", workflow_id = workflow_id)
     
 class SearcherPostQueryMessage(Message):
     """
     Search service uses this message to return the url of generated list of search results
     """
     msg_type = "SearcherPostQueryMessage"
-    def __init__(self, sender, msg, result_url):
-        super().__init__(self.msg_type, sender, msg)
+    def __init__(self, sender, msg, result_url, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("result_url", result_url)
     
 class SearcherGetResultMessage(Message):
@@ -86,8 +87,8 @@ class SearcherGetResultMessage(Message):
     to client
     """
     msg_type = "SearcherGetResultMessage"
-    def __init__(self, sender, msg, results):
-        super().__init__(self.msg_type, sender, msg)
+    def __init__(self, sender, msg, results, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("results", results)
     
 if __name__ == "__main__":

@@ -36,16 +36,27 @@ class AbsConductorClient:
         cc = ConductorWorker(self.wf_server_addr, num_threads, polling_interval)
         cc.start(self.task_name, self.task_service_func, wait)
 
-    def send_get_request(self):
-        r = requests.get("%s%s" % (self.host_addr, self.rest_endpoint))
+    def send_get_request(self, cookies = {}):
+        if type(cookies) is not dict:
+            raise TypeError("cookies passed to send_get_request() must be a dictionary. Current type: %s" % type(cookies))
+        r = requests.get("%s%s" % (self.host_addr, self.rest_endpoint), cookies = cookies)
         result = r.json()
         return result
     
-    def send_post_request(self, send_data):
+    def send_post_request(self, send_data, cookies = {}):
         """
         Assume that data is not a JSON string.
         This method dumps the given data into a JSON before sending over HTTP
         """
-        r = requests.post("%s%s" % (self.host_addr, self.rest_endpoint), data = json.dumps(send_data), headers = {"content-type" : "application/json"})
+        if type(cookies) is not dict:
+            raise TypeError("cookies passed to send_post_request() must be a dictionary. Current type: %s" % type(cookies))
+        r = requests.post("%s%s" % (self.host_addr, self.rest_endpoint), data = json.dumps(send_data), headers = {"content-type" : "application/json"}, cookies = cookies)
         result = r.json()
         return result
+    
+    def get_workflow_instance_id(self, task, wf_id_key = "workflowInstanceId"):
+        return task[wf_id_key]
+    
+    def get_workflow_instance_cookie(self, task, wf_id_key = "workflowInstanceId"):
+        wf_id = self.get_workflow_instance_id(task, wf_id_key = wf_id_key)
+        return {"wf_id" : wf_id}

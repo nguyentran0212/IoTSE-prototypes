@@ -15,7 +15,7 @@ class DetectorConductorClient(AbsConductorClient):
         self.task_service_func = self.invoke_detector
     
     def invoke_detector(self, task):
-        result = self.send_get_request()
+        result = self.send_get_request(cookies=self.get_workflow_instance_cookie(task))
         return {'status': 'COMPLETED', 'output': {"iotse_msg" : result}, 'logs' : []}
 
 class CollectorConductorClient(AbsConductorClient):
@@ -25,7 +25,7 @@ class CollectorConductorClient(AbsConductorClient):
     
     def invoke_collector(self, task):
         send_data = task["inputData"]["iotse_msg"]
-        result = self.send_post_request(send_data)
+        result = self.send_post_request(send_data, cookies=self.get_workflow_instance_cookie(task))
         return {'status': 'COMPLETED', 'output': {"iotse_msg" : result}, 'logs' : []}
 
 class StorageConductorClient(AbsConductorClient):
@@ -35,7 +35,7 @@ class StorageConductorClient(AbsConductorClient):
     
     def invoke_storage(self, task):
         send_data = task["inputData"]["iotse_msg"]
-        result = self.send_post_request(send_data)
+        result = self.send_post_request(send_data, cookies=self.get_workflow_instance_cookie(task))
         return {'status': 'COMPLETED', 'output': {"iotse_msg" : result}, 'logs' : []}
 
 class SearcherConductorClient(AbsConductorClient):
@@ -45,7 +45,7 @@ class SearcherConductorClient(AbsConductorClient):
     
     def invoke_searcher(self, task):
         send_data = task["inputData"]["iotse_msg"]
-        result = self.send_post_request(send_data)
+        result = self.send_post_request(send_data, cookies=self.get_workflow_instance_cookie(task))
         return {'status': 'COMPLETED', 'output': {"iotse_msg" : result}, 'logs' : []}
 
 class FacadeConductorClient(AbsConductorClient):
@@ -61,6 +61,6 @@ class FacadeConductorClient(AbsConductorClient):
         This might be called internally by the search engine facade instead of the conductor.
         Leave here for demonstration purpose
         """
-        r = requests.get("http://127.0.0.1:5000/api/results/asdf")
+        r = requests.get("http://127.0.0.1:5000/api/results/asdf", cookies=self.get_workflow_instance_cookie(task))
         result = r.json()
         return {'status': 'COMPLETED', 'output': {"iotse_msg" : result}, 'logs' : []}
