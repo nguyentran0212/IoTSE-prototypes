@@ -1,0 +1,11 @@
+[
+    {"service" : 
+        {
+            "class" : "DetectorService",
+            "module" : "detector_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    }
+]
