@@ -16,7 +16,7 @@ class SearchService(AbsSearchService):
         """
 #        with open("test_cookie.txt", "a") as f:
 #            f.write("From %s: %s\n" % (self, wf_id))
-        return "127.0.0.1:5000/api/results/%s" % wf_id
+        return wf_id
         
     def _getResult(self, result_id, wf_id = ""):
         """

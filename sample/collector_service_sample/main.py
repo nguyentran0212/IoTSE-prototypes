@@ -23,8 +23,8 @@ from lib.conductor_meta_client import ConductorMetaClient
 import os
 
 if __name__ == "__main__":
-    wf_server_addr_port = os.getenv('WF_SERVER', "127.0.0.1:8080")
-    host_addr_port = os.getenv("HOST_ADDR_PORT", "http://127.0.0.1:5000")
+    wf_server_addr_port = os.getenv('WF_SERVER', "172.17.0.2:8080")
+    host_addr_port = os.getenv("HOST_ADDR_PORT", "127.0.0.1:5000")
     cs_builder = ComponentServiceBuilder()
     cs = cs_builder.build("config.json", conn_to_conductor=True, 
                           wf_server_addr_port = wf_server_addr_port, 

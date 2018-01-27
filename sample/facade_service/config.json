@@ -1,0 +1,11 @@
+[
+    {"service" : 
+        {
+            "class" : "SimpleFacadeService",
+            "module" : "lib.facade_service_simple",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    }
+]

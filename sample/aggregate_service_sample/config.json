@@ -1,0 +1,11 @@
+[
+    {"service" : 
+        {
+            "class" : "AggregateService",
+            "module" : "aggregate_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    }
+]

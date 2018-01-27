@@ -1,0 +1,11 @@
+[
+    {"service" : 
+        {
+            "class" : "CollectorService",
+            "module" : "collector_service_sample",
+            "package" : "",
+            "args" : [],
+            "kwargs" : {}
+        }
+    }
+]
