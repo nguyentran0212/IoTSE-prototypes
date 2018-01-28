@@ -190,6 +190,35 @@ class AbsSearchService(AbsService):
     def _getResult(self, result_id, wf_id = ""):
         pass
 
+class AbsAggregatorService(AbsService):
+    serv_type = "aggregator"
+    def __init__(self):
+        super().__init__(self.serv_type)
+        
+    def store(self, result_url, wf_id = ""):
+        """
+        This function store the given URL of a result set to the internal
+        storage for retrieval and aggregate in the future
+        """
+        result = self._store(result_url, wf_id=wf_id)
+        return result
+        
+    def aggregate(self, query_id, wf_id = ""):
+        """
+        This function extract result sets from the database linking to the 
+        given query_id, and perform the aggregation
+        """
+        result = self._aggregate(query_id, wf_id=wf_id)
+        return result
+
+    @abstractmethod
+    def _store(self, result_url, wf_id = ""):
+        pass
+    
+    @abstractmethod
+    def _aggregate(self, query_id, wf_id = ""):
+        pass
+
 class AbsFacadeService(AbsService):
     serv_type = "facade"
     def __init__(self, search_workflow_name):

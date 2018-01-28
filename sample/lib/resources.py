@@ -214,6 +214,46 @@ class Result(AbsResource):
             
         results = self.service.getResult(result_id, wf_id = workflow_id)
         return messages.SearcherGetResultMessage(request.url, "Results", results, workflow_id = workflow_id).to_dict()
+   
+
+#==================================
+# /api/results
+#==================================
+class AggregatorResults(AbsResource):
+    """
+    Served by an aggregator service. It represents the set of all lists of search results
+    submitted to the aggregator for aggregation
+    """
+    def post(self):
+        """
+        POST request to this resource sends a result URL and invoke the store process
+        It returns URL to /api/results/<query_id> to retrieve aggregated results
+        
+        Expect a message in the format of SearcherPostQueryMessage
+        """
+        workflow_id = self.extract_workflow_id()
+        result_url = self.extract_from_payload("result_url")
+        aggregated_result_url = self.service.store(result_url, wf_id = workflow_id)
+        return messages.AggregatorPostResultMessage(request.url, "Added result URL for the query %s. Find the result at the included URL" % (workflow_id), aggregated_result_url, workflow_id = workflow_id).to_dict() , 201
+    
+#==================================
+# /api/results/<query_id>
+#==================================
+class AggregatorResult(AbsResource):
+    """
+    Served by a searcher service. It represents the set of all results generated
+    by a searcher service
+    """
+    def get(self, query_id):
+        """
+        GET request to this resource returns an individual resource item in
+        the storage
+        """
+        workflow_id = self.extract_workflow_id()
+            
+        results = self.service.aggregate(query_id, wf_id = workflow_id)
+        return messages.AggregatorGetResultMessage(request.url, "Results", results, workflow_id = workflow_id).to_dict()
+    
     
 #==================================
 # /queries

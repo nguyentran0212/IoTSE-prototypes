@@ -91,6 +91,25 @@ class SearcherGetResultMessage(Message):
         super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
         self._add_payload("results", results)
     
+class AggregatorPostResultMessage(Message):
+    """
+    Aggregator service uses this message to return the URL pointing to the aggregated list
+    of search results
+    """
+    msg_type = "AggregatorPostResultMessage"
+    def __init__(self, sender, msg, result_url, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
+        self._add_payload("aggregated_result_url", result_url)
+    
+class AggregatorGetResultMessage(Message):
+    """
+    Aggregator service uses this message to return a list of search results to the client
+    """
+    msg_type = "AggregatorGetResultMessage"
+    def __init__(self, sender, msg, results, workflow_id = ""):
+        super().__init__(self.msg_type, sender, msg, workflow_id = workflow_id)
+        self._add_payload("result_url", results)
+    
 class FacadePostQueryMessage(Message):
     """
     Facade service uses this message to return the id of the result for 

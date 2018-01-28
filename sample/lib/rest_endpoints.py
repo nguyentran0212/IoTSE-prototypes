@@ -72,6 +72,27 @@ GET: retrieve the list of search results matching the given id
 """
 results = "/api/results/<result_id>"
 
+
+
+
+"""
+aggregate_results endpoint is utilised by aggregator
+
+POST: accept a URL pointing to a list of search results, corresponding to a given query ID
+"""
+aggregate_results = "/api/results"
+
+
+
+"""
+aggregate_result endpoint is utilised by aggregator
+
+GET: retrieve the aggregated list of search results of the given query id
+"""
+aggregate_result = "/api/results/<query_id>"
+
+
+
 """
 facade queries endpoint is utilised by facade services.
 
@@ -88,3 +109,4 @@ GET: retrieve the link to list of results of the given ID
 """
 facade_results_post = "/results"
 facade_results_get = "/results/<result_id>"
+

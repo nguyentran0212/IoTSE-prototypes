@@ -11,7 +11,7 @@ import requests
 import json
 
 class AbsConductorClient:
-    def __init__(self, host_addr, rest_endpoint, task_name, wf_server_addr = "http://127.0.0.1:8080/api"):
+    def __init__(self, host_addr, rest_endpoint, task_name, wf_server_addr):
         """
         Conductor client polls a workflow server to new instance of a specific task
         that it handles. It invoke the service handling this task, and returns its
@@ -36,10 +36,10 @@ class AbsConductorClient:
         cc = ConductorWorker(self.wf_server_addr, num_threads, polling_interval)
         cc.start(self.task_name, self.task_service_func, wait)
 
-    def send_get_request(self, cookies = {}):
+    def send_get_request(self, append_to_endpoint = "", cookies = {}):
         if type(cookies) is not dict:
             raise TypeError("cookies passed to send_get_request() must be a dictionary. Current type: %s" % type(cookies))
-        r = requests.get("%s%s" % (self.host_addr, self.rest_endpoint), cookies = cookies)
+        r = requests.get("%s%s" % (self.host_addr, self.rest_endpoint + append_to_endpoint), cookies = cookies)
         result = r.json()
         return result
     
@@ -51,7 +51,10 @@ class AbsConductorClient:
         if type(cookies) is not dict:
             raise TypeError("cookies passed to send_post_request() must be a dictionary. Current type: %s" % type(cookies))
         r = requests.post("%s%s" % (self.host_addr, self.rest_endpoint), data = json.dumps(send_data), headers = {"content-type" : "application/json"}, cookies = cookies)
+        print(str(r))
+        print("%s%s" % (self.host_addr, self.rest_endpoint))
         result = r.json()
+        print(result)
         return result
     
     def get_workflow_instance_id(self, task, wf_id_key = "workflowInstanceId"):
