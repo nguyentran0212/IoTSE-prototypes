@@ -1,0 +1,63 @@
+{
+   "payload" : {
+      "result_set" : {
+         "results" : [
+            [
+               {
+                  "content" : {
+                     "temperature" : 234
+                  },
+                  "ID" : "resource_1",
+                  "metadata" : {
+                     "type" : "sensor data"
+                  }
+               },
+               {
+                  "score" : 50
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "temperature" : 234
+                  },
+                  "ID" : "resource_2",
+                  "metadata" : {
+                     "type" : "sensor data"
+                  }
+               },
+               {
+                  "score" : 10
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "temperature" : 234
+                  },
+                  "metadata" : {
+                     "type" : "sensor data"
+                  },
+                  "ID" : "resource_3"
+               },
+               {
+                  "score" : 70
+               }
+            ]
+         ],
+         "query_instance" : {
+            "query_content" : {
+               "temperature" : "q234",
+               "type" : "sensor data"
+            },
+            "query_ID" : "query 1"
+         },
+         "query_ID" : "query_1"
+      }
+   },
+   "type" : "result_set_message",
+   "sender" : "http://localhost:5000/api/results/query_1",
+   "workflow_id" : "",
+   "misc" : null,
+   "msg" : "Results"
+}

@@ -21,8 +21,14 @@ from lib.component_service_builder import ComponentServiceBuilder
 from importlib import import_module
 from lib.conductor_meta_client import ConductorMetaClient
 
-if __name__ == "__main__":
-    cs_builder = ComponentServiceBuilder()
-    cs = cs_builder.build("config.json", conn_to_conductor=True)
+#if __name__ == "__main__":
+#    cs_builder = ComponentServiceBuilder()
+##    cs = cs_builder.build("config.json", conn_to_conductor=True)
 #    cs = cs_builder.build("config.json", conn_to_conductor=False)
-    cs.boot()
+#    cs.boot()
+
+cs_builder = ComponentServiceBuilder()
+#    cs = cs_builder.build("config.json", conn_to_conductor=True)
+cs = cs_builder.build("config.json", conn_to_conductor=True)
+cs.boot()
+app = cs.app

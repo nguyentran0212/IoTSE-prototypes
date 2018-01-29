@@ -1,0 +1,39 @@
+{
+    "type": "IoTContent_message",
+    "sender": "http://localhost:5000/api/new-cont-ids/123456",
+    "workflow_id": "",
+    "msg": "List of detected content id",
+    "payload": {
+        "iot_contents": [
+            {
+                "ID": "source 1",
+                "metadata": {
+                    "type": "sensor source"
+                },
+                "content": {
+                    "url": "http://gateway/res_1"
+                }
+            },
+            {
+                "ID": "source 2",
+                "metadata": {
+                    "type": "sensor source"
+                },
+                "content": {
+                    "url": "http://gateway/res_2"
+                }
+            },
+            {
+                "ID": "source 3",
+                "metadata": {
+                    "type": "sensor source"
+                },
+                "content": {
+                    "url": "http://gateway/res_3"
+                }
+            }
+        ]
+    },
+    "misc": null
+}
+

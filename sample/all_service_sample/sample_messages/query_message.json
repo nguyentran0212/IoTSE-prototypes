@@ -1,0 +1,1 @@
+{"type": "query_message", "sender": "sender", "workflow_id": "", "msg": "msg", "payload": {"query": {"query_ID": "query_1", "query_content": {"temperature": "q234", "type": "sensor data"}}}, "misc": null}
