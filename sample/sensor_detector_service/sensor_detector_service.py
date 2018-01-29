@@ -14,10 +14,8 @@ import requests
 import pickle
 
 class DetectorService(AbsDetectorService):
-    def __init__(self, wsr_host_port = None, redis_host = "localhost", redis_port = 6379, redis_db = 0, *args, **kwargs):
+    def __init__(self, redis_host = "localhost", redis_port = 6379, redis_db = 0, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        iot_source = entity.IoTContent("wsr_1", {"type" : "sensor source"}, {"url" : wsr_host_port})
-        self.sources = {"wsr" : [iot_source]}
         self.redis_client = redis.StrictRedis(host = redis_host, port = redis_port, db = redis_db)
         self.redis_query_id_key = "sensor_detector_service:key:"
     
