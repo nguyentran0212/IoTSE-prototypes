@@ -12,7 +12,7 @@ import math
 import lib.entity as entity
 
 class SampleData():
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         iot_content1 = entity.IoTContent("source 1", {"type" : "temp sensor"}, {"value" : 34})
         iot_content2 = entity.IoTContent("source 2", {"type" : "humidity sensor"}, {"value" : 54})
         iot_content3 = entity.IoTContent("source 3", {"type" : "light sensor"}, {"value" : 5})

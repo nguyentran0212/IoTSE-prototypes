@@ -8,6 +8,9 @@ Created on Wed Jan  3 13:15:52 2018
 from lib.abstract_services import AbsStorageService
 
 class StorageService(AbsStorageService):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+    
     def _insert(self, iot_contents, wf_id = ""):
         """
         Retrieve set of resources at the targeted URL and insert them

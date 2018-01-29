@@ -1,56 +1,85 @@
-[
-    {"service" : 
+{
+    "env_vars" : [
         {
-            "class" : "DetectorService",
-            "module" : "detector_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
-        }
-    },
-    {"service" : 
+            "var_name" : "WF_SERVER",
+            "param_name" : "wf_host_port",
+            "default_value" : "localhost:8080"
+        },
         {
-            "class" : "CollectorService",
-            "module" : "collector_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
-        }
-    },
-    {"service" : 
+            "var_name" : "HOST_ADDR_PORT",
+            "param_name" : "self_host_port",
+            "default_value" : "http://localhost:5000"
+        },
         {
-            "class" : "SearcherService",
-            "module" : "searcher_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
-        }
-    },
-    {"service" : 
+            "var_name" : "REDIS_ADDR",
+            "param_name" : "redis_host",
+            "default_value" : "localhost"
+        },
         {
-            "class" : "StorageService",
-            "module" : "storage_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
-        }
-    },
-    {"service" : 
+            "var_name" : "REDIS_POST",
+            "param_name" : "redis_port",
+            "default_value" : 6379
+        },
         {
-            "class" : "SimpleFacadeService",
-            "module" : "lib.facade_service_simple",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
+            "var_name" : "REDIS_DB",
+            "param_name" : "redis_db",
+            "default_value" : 0
         }
-    },
-    {"service" : 
-        {
-            "class" : "AggregateService",
-            "module" : "aggregate_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
-        }
-    }
-]
+    ],
+    "services" : [
+            {"service" : 
+                {
+                    "class" : "DetectorService",
+                    "module" : "detector_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            },
+            {"service" : 
+                {
+                    "class" : "CollectorService",
+                    "module" : "collector_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            },
+            {"service" : 
+                {
+                    "class" : "SearcherService",
+                    "module" : "searcher_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            },
+            {"service" : 
+                {
+                    "class" : "StorageService",
+                    "module" : "storage_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            },
+            {"service" : 
+                {
+                    "class" : "SimpleFacadeService",
+                    "module" : "lib.facade_service_simple",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            },
+            {"service" : 
+                {
+                    "class" : "AggregateService",
+                    "module" : "aggregate_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            }
+        ]
+}

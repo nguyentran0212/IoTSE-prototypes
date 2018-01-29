@@ -20,6 +20,9 @@ class SampleData():
 sample_data = SampleData()
 
 class DetectorService(AbsDetectorService):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+    
     def _detect(self, iot_contents = [], wf_id = ""):
 #        with open("test_cookie.txt", "a") as f:
 #            f.write("From %s: %s\n" % (self, wf_id))
