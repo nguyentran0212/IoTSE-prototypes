@@ -24,6 +24,14 @@ ENV HOST_HOST_PORT http://localhost:5000
 ENV REDIS_HOST localhost
 ENV REDIS_POST 6379
 ENV REDIS_DB 0
+ENV WSR_HOST_PORT http://localhost:8500/v1.0
+ENV DETECTOR_TASK_NAME detect
+ENV COLLECTOR_TASK_NAME collect
+ENV STORAGE_TASK_NAME store
+ENV SEARCHER_TASK_NAME search
+ENV AGG_ADD_RESULT_TASK_NAME add_result
+ENV AGG_AGGREGATE_TASK_NAME aggregate
+ENV FACADE_TASK_NAME get_aggregated_result
 
 # Run main.py when the container launches
 CMD gunicorn -w 4 -b 0.0.0.0:5000 main:app

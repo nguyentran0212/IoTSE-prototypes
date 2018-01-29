@@ -20,14 +20,15 @@ Created on Tue Jan  2 14:27:41 2018
 from lib.component_service_builder import ComponentServiceBuilder
 from importlib import import_module
 from lib.conductor_meta_client import ConductorMetaClient
-import os
 
-if __name__ == "__main__":
-    wf_server_addr_port = os.getenv('WF_SERVER', "172.17.0.2:8080")
-    host_addr_port = os.getenv("HOST_ADDR_PORT", "127.0.0.1:5000")
-    cs_builder = ComponentServiceBuilder()
-    cs = cs_builder.build("config.json", conn_to_conductor=True, 
-                          wf_server_addr_port = wf_server_addr_port, 
-                          host_addr_port=host_addr_port)
+#if __name__ == "__main__":
+#    cs_builder = ComponentServiceBuilder()
+##    cs = cs_builder.build("config.json", conn_to_conductor=True)
 #    cs = cs_builder.build("config.json", conn_to_conductor=False)
-    cs.boot()
+#    cs.boot()
+
+cs_builder = ComponentServiceBuilder()
+#    cs = cs_builder.build("config.json", conn_to_conductor=True)
+cs = cs_builder.build("config.json", conn_to_conductor=True)
+cs.boot()
+app = cs.app

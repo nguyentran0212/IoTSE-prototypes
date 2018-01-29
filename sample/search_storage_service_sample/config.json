@@ -1,20 +1,59 @@
-[
-    {"service" : 
+{
+    "env_vars" : [
         {
-            "class" : "SearchService",
-            "module" : "search_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
-        }
-    },
-    {"service" : 
+            "var_name" : "WF_SERVER",
+            "param_name" : "wf_host_port",
+            "default_value" : "localhost:8080"
+        },
         {
-            "class" : "StorageService",
-            "module" : "storage_service_sample",
-            "package" : "",
-            "args" : [],
-            "kwargs" : {}
+            "var_name" : "HOST_HOST_PORT",
+            "param_name" : "self_host_port",
+            "default_value" : "http://localhost:5000"
+        },
+        {
+            "var_name" : "REDIS_HOST",
+            "param_name" : "redis_host",
+            "default_value" : "localhost"
+        },
+        {
+            "var_name" : "REDIS_POST",
+            "param_name" : "redis_port",
+            "default_value" : 6379
+        },
+        {
+            "var_name" : "REDIS_DB",
+            "param_name" : "redis_db",
+            "default_value" : 0
+        },
+        {
+            "var_name" : "STORAGE_TASK_NAME",
+            "param_name" : "storage_task_name",
+            "default_value" : "store"
+        },
+        {
+            "var_name" : "SEARCHER_TASK_NAME",
+            "param_name" : "searcher_task_name",
+            "default_value" : "search"
         }
-    }
-]
+    ],
+    "services" : [
+            {"service" : 
+                {
+                    "class" : "SearcherService",
+                    "module" : "searcher_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            },
+            {"service" : 
+                {
+                    "class" : "StorageService",
+                    "module" : "storage_service_sample",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            }
+        ]
+}

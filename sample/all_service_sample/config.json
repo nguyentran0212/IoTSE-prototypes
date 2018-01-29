@@ -24,6 +24,46 @@
             "var_name" : "REDIS_DB",
             "param_name" : "redis_db",
             "default_value" : 0
+        },
+        {
+            "var_name" : "WSR_HOST_PORT",
+            "param_name" : "wsr_host_port",
+            "default_value" : "http://localhost:8500/v1.0"
+        },
+        {
+            "var_name" : "DETECTOR_TASK_NAME",
+            "param_name" : "detector_task_name",
+            "default_value" : "detect"
+        },
+        {
+            "var_name" : "COLLECTOR_TASK_NAME",
+            "param_name" : "collector_task_name",
+            "default_value" : "collect"
+        },
+        {
+            "var_name" : "STORAGE_TASK_NAME",
+            "param_name" : "storage_task_name",
+            "default_value" : "store"
+        },
+        {
+            "var_name" : "SEARCHER_TASK_NAME",
+            "param_name" : "searcher_task_name",
+            "default_value" : "search"
+        },
+        {
+            "var_name" : "AGG_ADD_RESULT_TASK_NAME",
+            "param_name" : "agg_add_result_task_name",
+            "default_value" : "add_result"
+        },
+        {
+            "var_name" : "AGG_AGGREGATE_TASK_NAME",
+            "param_name" : "agg_aggregate_task_name",
+            "default_value" : "aggregate"
+        },
+        {
+            "var_name" : "FACADE_TASK_NAME",
+            "param_name" : "facade_task_name",
+            "default_value" : "get_aggregated_result"
         }
     ],
     "services" : [

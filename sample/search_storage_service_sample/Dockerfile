@@ -19,8 +19,14 @@ WORKDIR /app
 EXPOSE 5000
 
 # Define environment variable
-ENV WF_SERVER 172.17.0.2:8080
-ENV HOST_ADDR_PORT 127.0.0.1:5000
+ENV WF_SERVER localhost:8080
+ENV HOST_HOST_PORT http://localhost:5000
+ENV REDIS_HOST localhost
+ENV REDIS_POST 6379
+ENV REDIS_DB 0
+ENV STORAGE_TASK_NAME store
+ENV SEARCHER_TASK_NAME search
 
 # Run main.py when the container launches
-CMD ["python", "main.py"]
+CMD gunicorn -w 4 -b 0.0.0.0:5000 main:app
+
