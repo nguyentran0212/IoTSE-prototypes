@@ -6,12 +6,12 @@
             "default_value" : "localhost:8080"
         },
         {
-            "var_name" : "HOST_ADDR_PORT",
+            "var_name" : "HOST_HOST_PORT",
             "param_name" : "self_host_port",
             "default_value" : "http://localhost:5000"
         },
         {
-            "var_name" : "REDIS_ADDR",
+            "var_name" : "REDIS_HOST",
             "param_name" : "redis_host",
             "default_value" : "localhost"
         },

@@ -12,9 +12,9 @@ import lib.entity as entity
 from lib.abstract_services import AbsAggregatorService
 
 class AggregateService(AbsAggregatorService):
-    def __init__(self, *args, **kwargs):
-        super().__init__()
-        self.redis_client = redis.StrictRedis(host = "localhost", port = 6379, db = 0)
+    def __init__(self, redis_host = "localhost", redis_port = 6379, redis_db = 0, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.redis_client = redis.StrictRedis(host = redis_host, port = redis_port, db = redis_db)
         self.redis_query_id_key = "aggregator:query_id:"
     
     def _store(self, result_set, wf_id = ""):
