@@ -7,11 +7,11 @@
       "query" : {
          "query_content" : {
             "reading_query" : {
-            	"content.result" : "45.9669"
+            	"content.result" : "0.92"
             },
             "metadata_query" : {
-               "content.ObservedProperty.name" : "Humidity",
-               "content.unitOfMeasurement.name" : "percent"
+               "content.ObservedProperty.name" : "Luminance",
+               "content.unitOfMeasurement.name" : "lux"
             }
          },
          "query_ID" : "query_1"

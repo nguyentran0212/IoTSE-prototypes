@@ -1,0 +1,2132 @@
+{
+   "misc" : null,
+   "payload" : {
+      "result_set" : {
+         "query_ID" : "query_1",
+         "results" : [
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(1-humidity)",
+                  "content" : {
+                     "description" : "This is a humidity stream belonging to sensor 1-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 1-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(2-humidity)",
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 2-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     },
+                     "name" : "Temperature stream 2-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(3-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     },
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 3-humidity",
+                     "phenomenonTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 3-humidity"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 4-humidity",
+                     "resultTime" : "N/A",
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 4-humidity",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(4-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "name" : "Temperature stream 5-humidity",
+                     "phenomenonTime" : "N/A",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 5-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(5-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 6-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "name" : "Temperature stream 6-humidity",
+                     "phenomenonTime" : "N/A"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(6-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 7-humidity",
+                     "phenomenonTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 7-humidity"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(7-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "description" : "This is a humidity stream belonging to sensor 8-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 8-humidity",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(8-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 9-humidity",
+                     "phenomenonTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 9-humidity"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(9-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(10-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "name" : "Temperature stream 10-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 10-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(11-humidity)",
+                  "content" : {
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 11-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 11-humidity",
+                     "phenomenonTime" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 12-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 12-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(12-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(13-humidity)",
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 13-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 13-humidity"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 14-humidity",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 14-humidity",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "observedArea" : "N/A"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(14-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(15-humidity)",
+                  "content" : {
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 15-humidity",
+                     "resultTime" : "N/A",
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 15-humidity",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 16-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "name" : "Temperature stream 16-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(16-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(17-humidity)",
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 17-humidity",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 17-humidity",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(18-humidity)",
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     },
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 18-humidity",
+                     "phenomenonTime" : "N/A",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 18-humidity"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 19-humidity",
+                     "phenomenonTime" : "N/A",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 19-humidity",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(19-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 20-humidity",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 20-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(20-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(21-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 21-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 21-humidity"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(22-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 22-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 22-humidity",
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "observedArea" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 23-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 23-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(23-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 24-humidity",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 24-humidity",
+                     "FeatureOfInterest" : {
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(24-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "description" : "This is a humidity stream belonging to sensor 25-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "name" : "Temperature stream 25-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "observedArea" : "N/A"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(25-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(26-humidity)",
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 26-humidity",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 26-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 27-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 27-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(27-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(28-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 28-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 28-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(29-humidity)",
+                  "content" : {
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 29-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 29-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(30-humidity)",
+                  "content" : {
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 30-humidity",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 30-humidity",
+                     "resultTime" : "N/A",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 31-humidity",
+                     "resultTime" : "N/A",
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 31-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(31-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(32-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 32-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 32-humidity",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 33-humidity",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 33-humidity",
+                     "phenomenonTime" : "N/A"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(33-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 34-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 34-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(34-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 35-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 35-humidity",
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(35-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "name" : "Temperature stream 36-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 36-humidity",
+                     "resultTime" : "N/A",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "observedArea" : "N/A"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(36-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 37-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 37-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(37-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(38-humidity)",
+                  "content" : {
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 38-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 38-humidity",
+                     "FeatureOfInterest" : {
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "observedArea" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(39-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     },
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "name" : "Temperature stream 39-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 39-humidity",
+                     "resultTime" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 40-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 40-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(40-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 41-humidity",
+                     "phenomenonTime" : "N/A",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 41-humidity",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1"
+                     },
+                     "observedArea" : "N/A"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(41-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 42-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 42-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(42-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "description" : "This is a humidity stream belonging to sensor 43-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "Content" : "double",
+                        "name" : "OM_Measurement",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "name" : "Temperature stream 43-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A"
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(43-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "name" : "FOI 1"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 44-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 44-humidity"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(44-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(45-humidity)",
+                  "content" : {
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "name" : "Temperature stream 45-humidity",
+                     "phenomenonTime" : "N/A",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 45-humidity",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "description" : "FOI Type 1",
+                        "encodingType" : "application/vnd.geo+json"
+                     },
+                     "name" : "Temperature stream 46-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 46-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(46-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(47-humidity)",
+                  "content" : {
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "observedArea" : "N/A",
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 47-humidity",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 47-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "Content" : "double",
+                        "name" : "OM_Measurement"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(48-humidity)",
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "name" : "Temperature stream 48-humidity",
+                     "phenomenonTime" : "N/A",
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 48-humidity",
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 49-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 49-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex.",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity"
+                     }
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(49-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "symbol" : "%"
+                     },
+                     "name" : "Temperature stream 50-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observationType" : {
+                        "name" : "OM_Measurement",
+                        "Content" : "double",
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement "
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 50-humidity",
+                     "resultTime" : "N/A"
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(50-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "content" : {
+                     "name" : "Temperature stream 51-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 51-humidity",
+                     "resultTime" : "N/A",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1"
+                     }
+                  },
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(51-humidity)"
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(52-humidity)",
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "name" : "FOI 1",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A"
+                     },
+                     "unitOfMeasurement" : {
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent",
+                        "symbol" : "%"
+                     },
+                     "observedArea" : "N/A",
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 52-humidity",
+                     "ObservedProperty" : {
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "name" : "Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 52-humidity",
+                     "resultTime" : "N/A"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(53-humidity)",
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "content" : {
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "description" : "This is a humidity stream belonging to sensor 53-humidity",
+                     "resultTime" : "N/A",
+                     "name" : "Temperature stream 53-humidity",
+                     "phenomenonTime" : "N/A",
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29",
+                        "name" : "percent"
+                     },
+                     "FeatureOfInterest" : {
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "feature" : "N/A",
+                        "name" : "FOI 1"
+                     }
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ],
+            [
+               {
+                  "metadata" : {
+                     "type" : "sensor_metadata"
+                  },
+                  "ID" : "http://localhost:8500/v1.0/Datastreams(54-humidity)",
+                  "content" : {
+                     "FeatureOfInterest" : {
+                        "feature" : "N/A",
+                        "encodingType" : "application/vnd.geo+json",
+                        "description" : "FOI Type 1",
+                        "name" : "FOI 1"
+                     },
+                     "observedArea" : "N/A",
+                     "unitOfMeasurement" : {
+                        "symbol" : "%",
+                        "name" : "percent",
+                        "definition" : "http://unitsofmeasure.org/ucum.html#para-29"
+                     },
+                     "ObservedProperty" : {
+                        "name" : "Humidity",
+                        "definition" : "http://dbpedia.org/page/Humidity",
+                        "description" : "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible. Humidity indicates the likelihood of precipitation, dew, or fog. Higher humidity reduces the effectiveness of sweating in cooling the body by reducing the rate of evaporation of moisture from the skin. This effect is calculated in a heat index table or humidex."
+                     },
+                     "phenomenonTime" : "N/A",
+                     "name" : "Temperature stream 54-humidity",
+                     "observationType" : {
+                        "ValueCode" : "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement ",
+                        "name" : "OM_Measurement",
+                        "Content" : "double"
+                     },
+                     "resultTime" : "N/A",
+                     "description" : "This is a humidity stream belonging to sensor 54-humidity"
+                  }
+               },
+               {
+                  "score" : 100
+               }
+            ]
+         ],
+         "query_instance" : {
+            "query_ID" : "query_1",
+            "query_content" : {
+               "metadata_query" : {
+                  "content.ObservedProperty.name" : "Humidity",
+                  "content.unitOfMeasurement.name" : "percent"
+               },
+               "reading_query" : {
+                  "content.result" : "45.9669"
+               }
+            }
+         }
+      }
+   },
+   "workflow_id" : "",
+   "msg" : "Results",
+   "type" : "result_set_message",
+   "sender" : "http://localhost:5000/api/results/query_1"
+}

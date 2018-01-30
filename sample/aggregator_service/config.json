@@ -1,0 +1,50 @@
+{
+    "env_vars" : [
+        {
+            "var_name" : "WF_SERVER",
+            "param_name" : "wf_host_port",
+            "default_value" : "localhost:8080"
+        },
+        {
+            "var_name" : "HOST_HOST_PORT",
+            "param_name" : "self_host_port",
+            "default_value" : "http://localhost:5000"
+        },
+        {
+            "var_name" : "REDIS_HOST",
+            "param_name" : "redis_host",
+            "default_value" : "localhost"
+        },
+        {
+            "var_name" : "REDIS_POST",
+            "param_name" : "redis_port",
+            "default_value" : 6379
+        },
+        {
+            "var_name" : "REDIS_DB",
+            "param_name" : "redis_db",
+            "default_value" : 0
+        },
+        {
+            "var_name" : "AGG_ADD_RESULT_TASK_NAME",
+            "param_name" : "agg_add_result_task_name",
+            "default_value" : "add_result"
+        },
+        {
+            "var_name" : "AGG_AGGREGATE_TASK_NAME",
+            "param_name" : "agg_aggregate_task_name",
+            "default_value" : "aggregate"
+        }
+    ],
+    "services" : [
+            {"service" : 
+                {
+                    "class" : "AggregateService",
+                    "module" : "aggregator_service",
+                    "package" : "",
+                    "args" : [],
+                    "kwargs" : {}
+                }
+            }
+        ]
+}
