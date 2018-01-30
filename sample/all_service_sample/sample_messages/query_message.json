@@ -1,1 +1,1 @@
-{"type": "query_message", "sender": "sender", "workflow_id": "", "msg": "msg", "payload": {"query": {"query_ID": "query_1", "query_content": {"temperature": "q234", "type": "sensor data"}}}, "misc": null}
+{"type": "query_message", "sender": "sender", "workflow_id": "", "msg": "msg", "payload": {"query": {"query_ID": "query_1", "query_content": {"metadata_query" : {"content.ObservedProperty.name" : "Humidity", "content.unitOfMeasurement.name" : "percent"}, "reading_query" : {}}}}, "misc": null}

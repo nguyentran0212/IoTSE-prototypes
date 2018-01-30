@@ -57,12 +57,22 @@ class CollectorService(AbsCollectorService):
         """
         r = requests.get(sensor_url)
         sensor_metadata = r.json()
-        del sensor_metadata["@iot.id"]
-        del sensor_metadata["@iot.selfLink"]
-        del sensor_metadata["Sensor@iot.navigationLink"]
-        del sensor_metadata["Thing@iot.navigationLink"]
-        del sensor_metadata["Observations@iot.navigationLink"]
-        del sensor_metadata["ObservedProperty@iot.navigationLink"]
+        try:
+            del sensor_metadata["@iot.id"]
+            del sensor_metadata["@iot.selfLink"]
+            del sensor_metadata["Sensor@iot.navigationLink"]
+            del sensor_metadata["Thing@iot.navigationLink"]
+            del sensor_metadata["Observations@iot.navigationLink"]
+            del sensor_metadata["ObservedProperty@iot.navigationLink"]
+            del sensor_metadata["FeatureOfInterest"]["@iot.id"]
+            del sensor_metadata["FeatureOfInterest"]["@iot.selfLink"]
+            del sensor_metadata["FeatureOfInterest"]["Observations@iot.navigationLink"]
+            del sensor_metadata["ObservedProperty"]["@iot.id"]
+            del sensor_metadata["ObservedProperty"]["@iot.selfLink"]
+            del sensor_metadata["ObservedProperty"]["Datastreams@iot.navigationLink"]
+        except KeyError:
+            return None
+        
         sensor_metadata_object = entity.IoTContent(sensor_url, {"type" : "sensor_metadata"}, sensor_metadata)
         return sensor_metadata_object
     
