@@ -38,19 +38,19 @@
         {
             "var_name" : "STORAGE_TASK_NAME",
             "param_name" : "storage_task_name",
-            "default_value" : "store_metadata"
+            "default_value" : "store_readings"
         },
         {
             "var_name" : "SEARCHER_TASK_NAME",
             "param_name" : "searcher_task_name",
-            "default_value" : "search_metadata"
+            "default_value" : "search_readings"
         }
     ],
     "services" : [
             {"service" : 
                 {
                     "class" : "SearcherService",
-                    "module" : "metadata_search_service",
+                    "module" : "reading_search_service",
                     "package" : "",
                     "args" : [],
                     "kwargs" : {}
@@ -59,7 +59,7 @@
             {"service" : 
                 {
                     "class" : "StorageService",
-                    "module" : "metadata_storage_service",
+                    "module" : "reading_storage_service",
                     "package" : "",
                     "args" : [],
                     "kwargs" : {}

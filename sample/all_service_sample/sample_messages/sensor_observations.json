@@ -1,0 +1,2371 @@
+{
+   "misc" : null,
+   "workflow_id" : "",
+   "sender" : "http://localhost:5000/api/res-contents/99644701-c8bd-4ec4-b9c7-2f09c5c8688b",
+   "msg" : "List of IoT content at the given req_id",
+   "payload" : {
+      "iot_contents" : [
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(1-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190535550141",
+               "result" : "21.0664",
+               "resultTime" : "2004-03-21T190535550141"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(1-humidity)",
+            "content" : {
+               "result" : "45.9669",
+               "resultTime" : "2004-03-21T190535550141",
+               "phenomenonTime" : "2004-03-21T190535550141"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190535550141",
+               "result" : "0.92",
+               "resultTime" : "2004-03-21T190535550141"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(1-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190535550141",
+               "result" : "2.35683",
+               "phenomenonTime" : "2004-03-21T190535550141"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(1-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(2-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190556020753",
+               "result" : "21.4192",
+               "resultTime" : "2004-03-21T190556020753"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(2-humidity)",
+            "content" : {
+               "result" : "46.7542",
+               "resultTime" : "2004-03-21T190556020753",
+               "phenomenonTime" : "2004-03-21T190556020753"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(2-light)",
+            "content" : {
+               "resultTime" : "2004-03-21T190556020753",
+               "result" : "11.04",
+               "phenomenonTime" : "2004-03-21T190556020753"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(2-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.33827",
+               "resultTime" : "2004-03-21T190556020753",
+               "phenomenonTime" : "2004-03-21T190556020753"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(3-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190540003996",
+               "resultTime" : "2004-03-21T190540003996",
+               "result" : "21.184"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(3-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190540003996",
+               "result" : "46.8524",
+               "resultTime" : "2004-03-21T190540003996"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(3-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190540003996",
+               "result" : "1.84",
+               "resultTime" : "2004-03-21T190540003996"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190540003996",
+               "result" : "2.38522",
+               "resultTime" : "2004-03-21T190540003996"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(3-voltage)"
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-21T190507402885",
+               "result" : "89.147",
+               "phenomenonTime" : "2004-03-21T190507402885"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(4-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(4-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "45.1763",
+               "resultTime" : "2004-03-21T190507402885",
+               "phenomenonTime" : "2004-03-21T190507402885"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(4-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190507402885",
+               "resultTime" : "2004-03-21T190507402885",
+               "result" : "5.06"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(4-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190507402885",
+               "result" : "2.31097",
+               "resultTime" : "2004-03-21T190507402885"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(5-temperature)",
+            "content" : {},
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {},
+            "ID" : "http://localhost:8500/v1.0/Datastreams(5-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(5-light)",
+            "content" : {},
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "result" : "2.16759",
+               "resultTime" : "2004-03-03T171056993959",
+               "phenomenonTime" : "2004-03-03T171056993959"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(5-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190434513672",
+               "result" : "122.153",
+               "resultTime" : "2004-03-21T190434513672"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(6-temperature)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190434513672",
+               "result" : "-3.91901",
+               "resultTime" : "2004-03-21T190434513672"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(6-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(6-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190434513672",
+               "resultTime" : "2004-03-21T190434513672",
+               "result" : "1.38"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(6-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190434513672",
+               "result" : "2.2497",
+               "phenomenonTime" : "2004-03-21T190434513672"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(7-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-31T041315761796",
+               "result" : "122.153",
+               "phenomenonTime" : "2004-03-31T041315761796"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(7-humidity)",
+            "content" : {
+               "result" : "-3.91901",
+               "resultTime" : "2004-03-31T041315761796",
+               "phenomenonTime" : "2004-03-31T041315761796"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-31T041315761796",
+               "result" : "114.08",
+               "phenomenonTime" : "2004-03-31T041315761796"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(7-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.1061",
+               "resultTime" : "2004-03-31T041315761796",
+               "phenomenonTime" : "2004-03-31T041315761796"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(7-voltage)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-10T090602532096",
+               "resultTime" : "2004-03-10T090602532096",
+               "result" : "25.5058"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(8-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(8-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-10T090602532096",
+               "result" : "27.0758",
+               "resultTime" : "2004-03-10T090602532096"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(8-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-10T090602532096",
+               "result" : "1729.6",
+               "phenomenonTime" : "2004-03-10T090602532096"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-10T090602532096",
+               "result" : "2.62796",
+               "resultTime" : "2004-03-10T090602532096"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(8-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T003454854411",
+               "result" : "20.2236",
+               "phenomenonTime" : "2004-03-21T003454854411"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(9-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(9-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T003454854411",
+               "resultTime" : "2004-03-21T003454854411",
+               "result" : "46.656"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "0.46",
+               "resultTime" : "2004-03-21T190603044804",
+               "phenomenonTime" : "2004-03-21T190603044804"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(9-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(9-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T003329883424",
+               "result" : "2.4644",
+               "resultTime" : "2004-03-21T003329883424"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(10-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190225275751",
+               "result" : "22.409",
+               "resultTime" : "2004-03-21T190225275751"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(10-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190225275751",
+               "result" : "48.676",
+               "resultTime" : "2004-03-21T190225275751"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "result" : "7.36",
+               "resultTime" : "2004-03-21T190225275751",
+               "phenomenonTime" : "2004-03-21T190225275751"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(10-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(10-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190225275751",
+               "result" : "2.35683",
+               "resultTime" : "2004-03-21T190225275751"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(11-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190555228199",
+               "result" : "21.772",
+               "phenomenonTime" : "2004-03-21T190555228199"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(11-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555228199",
+               "resultTime" : "2004-03-21T190555228199",
+               "result" : "49.2262"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(11-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555228199",
+               "resultTime" : "2004-03-21T190555228199",
+               "result" : "478.4"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(11-voltage)",
+            "content" : {
+               "resultTime" : "2004-03-21T190555228199",
+               "result" : "2.32",
+               "phenomenonTime" : "2004-03-21T190555228199"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(12-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190235667696",
+               "result" : "19.616",
+               "phenomenonTime" : "2004-03-21T190235667696"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190235667696",
+               "resultTime" : "2004-03-21T190235667696",
+               "result" : "50.45"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(12-humidity)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190235667696",
+               "resultTime" : "2004-03-21T190235667696",
+               "result" : "39.56"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(12-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.33827",
+               "resultTime" : "2004-03-21T190235667696",
+               "phenomenonTime" : "2004-03-21T190235667696"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(12-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190525235561",
+               "result" : "122.153",
+               "resultTime" : "2004-03-21T190525235561"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(13-temperature)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190525235561",
+               "resultTime" : "2004-03-21T190525235561",
+               "result" : "40.8381"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(13-humidity)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "57.04",
+               "resultTime" : "2004-03-21T190525235561",
+               "phenomenonTime" : "2004-03-21T190525235561"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(13-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(13-voltage)",
+            "content" : {
+               "result" : "2.25825",
+               "resultTime" : "2004-03-21T190525235561",
+               "phenomenonTime" : "2004-03-21T190525235561"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(14-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190600392624",
+               "resultTime" : "2004-03-21T190600392624",
+               "result" : "21.2722"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(14-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "48.1568",
+               "resultTime" : "2004-03-21T190600392624",
+               "phenomenonTime" : "2004-03-21T190600392624"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(14-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "93.84",
+               "resultTime" : "2004-03-21T190600392624",
+               "phenomenonTime" : "2004-03-21T190600392624"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(14-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190600392624",
+               "resultTime" : "2004-03-21T190600392624",
+               "result" : "2.38522"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(15-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-03T174457964385",
+               "result" : "122.153",
+               "resultTime" : "2004-03-03T174457964385"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-03T174457964385",
+               "resultTime" : "2004-03-03T174457964385",
+               "result" : "-4.0"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(15-humidity)"
+         },
+         {
+            "content" : {
+               "result" : "537.28",
+               "resultTime" : "2004-03-03T174457964385",
+               "phenomenonTime" : "2004-03-03T174457964385"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(15-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.17553",
+               "resultTime" : "2004-03-03T174457964385",
+               "phenomenonTime" : "2004-03-03T174457964385"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(15-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T185230742254",
+               "resultTime" : "2004-03-21T185230742254",
+               "result" : "122.153"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(16-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(16-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T185230742254",
+               "resultTime" : "2004-03-21T185230742254",
+               "result" : "-3.91901"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(16-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T185230742254",
+               "resultTime" : "2004-03-21T185230742254",
+               "result" : "41.4"
+            }
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-21T185230742254",
+               "result" : "2.14412",
+               "phenomenonTime" : "2004-03-21T185230742254"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(16-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(17-temperature)",
+            "content" : {
+               "result" : "122.153",
+               "resultTime" : "2004-03-21T022224813249",
+               "phenomenonTime" : "2004-03-21T022224813249"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(17-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "-3.91901",
+               "resultTime" : "2004-03-21T022224813249",
+               "phenomenonTime" : "2004-03-21T022224813249"
+            }
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-21T022224813249",
+               "result" : "0.46",
+               "phenomenonTime" : "2004-03-21T022224813249"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(17-light)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T022224813249",
+               "result" : "2.05509",
+               "resultTime" : "2004-03-21T022224813249"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(17-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(18-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-15T160237474513",
+               "result" : "1.731",
+               "resultTime" : "2004-03-15T160237474513"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "-3.91901",
+               "resultTime" : "2004-03-15T160237474513",
+               "phenomenonTime" : "2004-03-15T160237474513"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(18-humidity)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-15T160237474513",
+               "resultTime" : "2004-03-15T160237474513",
+               "result" : "309.12"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(18-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.01329",
+               "resultTime" : "2004-03-15T160237474513",
+               "phenomenonTime" : "2004-03-15T160237474513"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(18-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(19-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "122.153",
+               "resultTime" : "2004-03-21T190606987609",
+               "phenomenonTime" : "2004-03-21T190606987609"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(19-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190606987609",
+               "result" : "-3.91901",
+               "phenomenonTime" : "2004-03-21T190606987609"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(19-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "79.12",
+               "resultTime" : "2004-03-21T190606987609",
+               "phenomenonTime" : "2004-03-21T190606987609"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(19-voltage)",
+            "content" : {
+               "resultTime" : "2004-03-21T190606987609",
+               "result" : "2.23278",
+               "phenomenonTime" : "2004-03-21T190606987609"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(20-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "109.276",
+               "resultTime" : "2004-03-15T025137365878",
+               "phenomenonTime" : "2004-03-15T025137365878"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(20-humidity)",
+            "content" : {
+               "result" : "34.8139",
+               "resultTime" : "2004-03-15T025137365878",
+               "phenomenonTime" : "2004-03-15T025137365878"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(20-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-15T025137365878",
+               "result" : "26.68",
+               "resultTime" : "2004-03-15T025137365878"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(20-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-15T025137365878",
+               "resultTime" : "2004-03-15T025137365878",
+               "result" : "1.96662"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-17T203631654217",
+               "result" : "23.732",
+               "resultTime" : "2004-03-17T203631654217"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(21-temperature)"
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-17T203631654217",
+               "result" : "36.6807",
+               "phenomenonTime" : "2004-03-17T203631654217"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(21-humidity)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "150.88",
+               "resultTime" : "2004-03-17T203631654217",
+               "phenomenonTime" : "2004-03-17T203631654217"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(21-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.4341",
+               "resultTime" : "2004-03-17T203418369471",
+               "phenomenonTime" : "2004-03-17T203418369471"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(21-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(22-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-17T045542684048",
+               "result" : "21.6446",
+               "resultTime" : "2004-03-17T045542684048"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "32.7206",
+               "resultTime" : "2004-03-17T045542684048",
+               "phenomenonTime" : "2004-03-17T045542684048"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(22-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(22-light)",
+            "content" : {
+               "phenomenonTime" : "2004-03-17T045542684048",
+               "resultTime" : "2004-03-17T045542684048",
+               "result" : "0.46"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(22-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-17T045512411077",
+               "resultTime" : "2004-03-17T045512411077",
+               "result" : "2.41431"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(23-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-17T222853219118",
+               "resultTime" : "2004-03-17T222853219118",
+               "result" : "23.2224"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(23-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-17T222853219118",
+               "result" : "37.5394",
+               "resultTime" : "2004-03-17T222853219118"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-17T222927645683",
+               "result" : "224.48",
+               "phenomenonTime" : "2004-03-17T222927645683"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(23-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(23-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-30T142445205744",
+               "result" : "2.14412",
+               "resultTime" : "2004-03-30T142445205744"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(24-temperature)",
+            "content" : {
+               "resultTime" : "2004-03-19T061021143719",
+               "result" : "17.3914",
+               "phenomenonTime" : "2004-03-19T061021143719"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(24-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-19T061021143719",
+               "result" : "51.4743",
+               "resultTime" : "2004-03-19T061021143719"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-19T061021143719",
+               "resultTime" : "2004-03-19T061021143719",
+               "result" : "7.36"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(24-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.11359",
+               "resultTime" : "2004-03-31T220548097872",
+               "phenomenonTime" : "2004-03-31T220548097872"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(24-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(25-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-04-01T142919429452",
+               "resultTime" : "2004-04-01T142919429452",
+               "result" : "122.153"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(25-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-04-01T142919429452",
+               "resultTime" : "2004-04-01T142919429452",
+               "result" : "-4.0"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "result" : "1847.36",
+               "resultTime" : "2004-04-01T142919429452",
+               "phenomenonTime" : "2004-04-01T142919429452"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(25-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(25-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-04-01T142819327469",
+               "result" : "2.11359",
+               "resultTime" : "2004-04-01T142819327469"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(26-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-17T23153163511",
+               "result" : "22.0856",
+               "resultTime" : "2004-03-17T23153163511"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(26-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "40.7031",
+               "resultTime" : "2004-03-17T23153163511",
+               "phenomenonTime" : "2004-03-17T23153163511"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "121.44",
+               "resultTime" : "2004-03-17T23153163511",
+               "phenomenonTime" : "2004-03-17T23153163511"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(26-light)"
+         },
+         {
+            "content" : {
+               "result" : "2.15188",
+               "resultTime" : "2004-03-30T15111530282",
+               "phenomenonTime" : "2004-03-30T15111530282"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(26-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190559499339",
+               "result" : "21.8014",
+               "phenomenonTime" : "2004-03-21T190559499339"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(27-temperature)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190559499339",
+               "resultTime" : "2004-03-21T190559499339",
+               "result" : "47.31"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(27-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(27-light)",
+            "content" : {
+               "resultTime" : "2004-03-21T190559499339",
+               "result" : "0.46",
+               "phenomenonTime" : "2004-03-21T190559499339"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190559499339",
+               "resultTime" : "2004-03-21T190559499339",
+               "result" : "2.35683"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(27-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190526077055",
+               "result" : "19.9786",
+               "phenomenonTime" : "2004-03-21T190526077055"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(28-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(28-humidity)",
+            "content" : {
+               "resultTime" : "2004-03-21T190526077055",
+               "result" : "49.6457",
+               "phenomenonTime" : "2004-03-21T190526077055"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(28-light)",
+            "content" : {},
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(28-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190526077055",
+               "result" : "2.4644",
+               "phenomenonTime" : "2004-03-21T190526077055"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-30T084013955108",
+               "result" : "122.153",
+               "resultTime" : "2004-03-30T084013955108"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(29-temperature)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-30T084013955108",
+               "result" : "-3.83804",
+               "resultTime" : "2004-03-30T084013955108"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(29-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(29-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-30T084013955108",
+               "result" : "309.12",
+               "phenomenonTime" : "2004-03-30T084013955108"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(29-voltage)",
+            "content" : {
+               "result" : "2.09866",
+               "resultTime" : "2004-03-30T084013955108",
+               "phenomenonTime" : "2004-03-30T084013955108"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555496354",
+               "result" : "20.4392",
+               "resultTime" : "2004-03-21T190555496354"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(30-temperature)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555496354",
+               "resultTime" : "2004-03-21T190555496354",
+               "result" : "48.5788"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(30-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(30-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555496354",
+               "result" : "1.38",
+               "resultTime" : "2004-03-21T190555496354"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555496354",
+               "result" : "2.36622",
+               "resultTime" : "2004-03-21T190555496354"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(30-voltage)"
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-27T230341306745",
+               "result" : "122.153",
+               "phenomenonTime" : "2004-03-27T230341306745"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(31-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(31-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-27T230341306745",
+               "result" : "-3.91901",
+               "resultTime" : "2004-03-27T230341306745"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-27T230341306745",
+               "resultTime" : "2004-03-27T230341306745",
+               "result" : "172.96"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(31-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-27T230311550959",
+               "result" : "2.18353",
+               "resultTime" : "2004-03-27T230311550959"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(31-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(32-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "20.8508",
+               "resultTime" : "2004-03-21T190555705155",
+               "phenomenonTime" : "2004-03-21T190555705155"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(32-humidity)",
+            "content" : {
+               "resultTime" : "2004-03-21T190555705155",
+               "result" : "47.6035",
+               "phenomenonTime" : "2004-03-21T190555705155"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(32-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190555705155",
+               "resultTime" : "2004-03-21T190555705155",
+               "result" : "2.3"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(32-voltage)",
+            "content" : {
+               "resultTime" : "2004-03-21T190555705155",
+               "result" : "2.34751",
+               "phenomenonTime" : "2004-03-21T190555705155"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190605627674",
+               "resultTime" : "2004-03-21T190605627674",
+               "result" : "21.429"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(33-temperature)"
+         },
+         {
+            "content" : {
+               "result" : "45.7366",
+               "resultTime" : "2004-03-21T190605627674",
+               "phenomenonTime" : "2004-03-21T190605627674"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(33-humidity)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190605627674",
+               "result" : "1.38",
+               "resultTime" : "2004-03-21T190605627674"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(33-light)"
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-21T190605627674",
+               "result" : "2.38522",
+               "phenomenonTime" : "2004-03-21T190605627674"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(33-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(34-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190529403642",
+               "result" : "23.5066",
+               "resultTime" : "2004-03-21T190529403642"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190529403642",
+               "result" : "47.2773",
+               "resultTime" : "2004-03-21T190529403642"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(34-humidity)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190529403642",
+               "result" : "0.92",
+               "resultTime" : "2004-03-21T190529403642"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(34-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(34-voltage)",
+            "content" : {
+               "resultTime" : "2004-03-21T190529403642",
+               "result" : "2.37568",
+               "phenomenonTime" : "2004-03-21T190529403642"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "result" : "122.153",
+               "resultTime" : "2004-03-20T214223201751",
+               "phenomenonTime" : "2004-03-20T214223201751"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(35-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(35-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-20T214223201751",
+               "result" : "18.697",
+               "resultTime" : "2004-03-20T214223201751"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-20T214223201751",
+               "resultTime" : "2004-03-20T214223201751",
+               "result" : "0.92"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(35-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.25825",
+               "resultTime" : "2004-03-20T214223201751",
+               "phenomenonTime" : "2004-03-20T214223201751"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(35-voltage)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-18T202622361014",
+               "resultTime" : "2004-03-18T202622361014",
+               "result" : "21.8112"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(36-temperature)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "45.4732",
+               "resultTime" : "2004-03-18T202622361014",
+               "phenomenonTime" : "2004-03-18T202622361014"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(36-humidity)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "114.08",
+               "resultTime" : "2004-03-31T224748185858",
+               "phenomenonTime" : "2004-03-31T224748185858"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(36-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(36-voltage)",
+            "content" : {
+               "result" : "2.4341",
+               "resultTime" : "2004-03-18T202622361014",
+               "phenomenonTime" : "2004-03-18T202622361014"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190606830024",
+               "resultTime" : "2004-03-21T190606830024",
+               "result" : "26.9464"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(37-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(37-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190606830024",
+               "result" : "47.7338",
+               "resultTime" : "2004-03-21T190606830024"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190606830024",
+               "resultTime" : "2004-03-21T190606830024",
+               "result" : "9.2"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(37-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.32",
+               "resultTime" : "2004-03-21T190606830024",
+               "phenomenonTime" : "2004-03-21T190606830024"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(37-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "122.153",
+               "resultTime" : "2004-03-21T190558726578",
+               "phenomenonTime" : "2004-03-21T190558726578"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(38-temperature)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190558726578",
+               "result" : "44.3825",
+               "resultTime" : "2004-03-21T190558726578"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(38-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(38-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190558726578",
+               "result" : "9.2",
+               "resultTime" : "2004-03-21T190558726578"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190558726578",
+               "result" : "2.29313",
+               "phenomenonTime" : "2004-03-21T190558726578"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(38-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(39-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190359062705",
+               "result" : "21.8504",
+               "phenomenonTime" : "2004-03-21T190359062705"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(39-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190359062705",
+               "resultTime" : "2004-03-21T190359062705",
+               "result" : "45.6379"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(39-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "6.9",
+               "resultTime" : "2004-03-21T190359062705",
+               "phenomenonTime" : "2004-03-21T190359062705"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(39-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190359062705",
+               "result" : "2.38522",
+               "phenomenonTime" : "2004-03-21T190359062705"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(40-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190558581971",
+               "result" : "21.7622",
+               "resultTime" : "2004-03-21T190558581971"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(40-humidity)",
+            "content" : {
+               "resultTime" : "2004-03-21T190558581971",
+               "result" : "44.846",
+               "phenomenonTime" : "2004-03-21T190558581971"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(40-light)",
+            "content" : {
+               "result" : "34.04",
+               "resultTime" : "2004-03-21T190558581971",
+               "phenomenonTime" : "2004-03-21T190558581971"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(40-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190558581971",
+               "result" : "2.37568",
+               "phenomenonTime" : "2004-03-21T190558581971"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(41-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "21.7132",
+               "resultTime" : "2004-03-21T190605410344",
+               "phenomenonTime" : "2004-03-21T190605410344"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(41-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190605410344",
+               "resultTime" : "2004-03-21T190605410344",
+               "result" : "44.4157"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190605410344",
+               "resultTime" : "2004-03-21T190605410344",
+               "result" : "150.88"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(41-light)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190605410344",
+               "result" : "2.36622",
+               "resultTime" : "2004-03-21T190605410344"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(41-voltage)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190613240955",
+               "result" : "22.262",
+               "resultTime" : "2004-03-21T190613240955"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(42-temperature)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "45.1763",
+               "resultTime" : "2004-03-21T190613240955",
+               "phenomenonTime" : "2004-03-21T190613240955"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(42-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(42-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "5.98",
+               "resultTime" : "2004-03-21T190613240955",
+               "phenomenonTime" : "2004-03-21T190613240955"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(42-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.36622",
+               "resultTime" : "2004-03-21T190613240955",
+               "phenomenonTime" : "2004-03-21T190613240955"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(43-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "23.8594",
+               "resultTime" : "2004-03-21T190557309831",
+               "phenomenonTime" : "2004-03-21T190557309831"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(43-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190557309831",
+               "result" : "44.4488",
+               "phenomenonTime" : "2004-03-21T190557309831"
+            }
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-21T190557309831",
+               "result" : "11.96",
+               "phenomenonTime" : "2004-03-21T190557309831"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(43-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(43-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190557309831",
+               "resultTime" : "2004-03-21T190557309831",
+               "result" : "2.36622"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190611268073",
+               "resultTime" : "2004-03-21T190611268073",
+               "result" : "21.478"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(44-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(44-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190611268073",
+               "result" : "44.7798",
+               "phenomenonTime" : "2004-03-21T190611268073"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(44-light)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190611268073",
+               "resultTime" : "2004-03-21T190611268073",
+               "result" : "1.84"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(44-voltage)",
+            "content" : {
+               "resultTime" : "2004-03-21T190611268073",
+               "result" : "2.38522",
+               "phenomenonTime" : "2004-03-21T190611268073"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(45-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-20T030521757427",
+               "result" : "19.3024",
+               "resultTime" : "2004-03-20T030521757427"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(45-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "41.5116",
+               "resultTime" : "2004-03-20T030521757427",
+               "phenomenonTime" : "2004-03-20T030521757427"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-20T030521757427",
+               "resultTime" : "2004-03-20T030521757427",
+               "result" : "97.52"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(45-light)"
+         },
+         {
+            "content" : {
+               "result" : "2.39484",
+               "resultTime" : "2004-03-20T030521757427",
+               "phenomenonTime" : "2004-03-20T030521757427"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(45-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(46-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-20T052336648288",
+               "result" : "22.36",
+               "resultTime" : "2004-03-20T052336648288"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(46-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-20T052336648288",
+               "result" : "40.0945",
+               "phenomenonTime" : "2004-03-20T052336648288"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(46-light)",
+            "content" : {
+               "result" : "71.76",
+               "resultTime" : "2004-03-20T052308188113",
+               "phenomenonTime" : "2004-03-20T052308188113"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-20T052308188113",
+               "result" : "2.2497",
+               "resultTime" : "2004-03-20T052308188113"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(46-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(47-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-18T200248179804",
+               "result" : "21.8994",
+               "phenomenonTime" : "2004-03-18T200248179804"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(47-humidity)",
+            "content" : {
+               "phenomenonTime" : "2004-03-18T200248179804",
+               "result" : "44.1836",
+               "resultTime" : "2004-03-18T200248179804"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(47-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-18T220556719206",
+               "resultTime" : "2004-03-18T220556719206",
+               "result" : "596.16"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(47-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-18T200248179804",
+               "result" : "2.45421",
+               "resultTime" : "2004-03-18T200248179804"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(48-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-18T141246559544",
+               "result" : "20.9488",
+               "resultTime" : "2004-03-18T141246559544"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(48-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-18T141246559544",
+               "result" : "48.1243",
+               "phenomenonTime" : "2004-03-18T141246559544"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(48-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-18T14164656732",
+               "result" : "1023.04",
+               "phenomenonTime" : "2004-03-18T14164656732"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(48-voltage)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-18T141246559544",
+               "resultTime" : "2004-03-18T141246559544",
+               "result" : "2.4644"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T19061289884",
+               "resultTime" : "2004-03-21T19061289884",
+               "result" : "21.7034"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(49-temperature)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "44.7798",
+               "resultTime" : "2004-03-21T19061289884",
+               "phenomenonTime" : "2004-03-21T19061289884"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(49-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(49-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "0.92",
+               "resultTime" : "2004-03-21T19061289884",
+               "phenomenonTime" : "2004-03-21T19061289884"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T19061289884",
+               "resultTime" : "2004-03-21T19061289884",
+               "result" : "2.35683"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(49-voltage)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "23.3008",
+               "resultTime" : "2004-03-11T18274013966",
+               "phenomenonTime" : "2004-03-11T18274013966"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(50-temperature)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(50-humidity)",
+            "content" : {
+               "result" : "37.3679",
+               "resultTime" : "2004-03-11T18274013966",
+               "phenomenonTime" : "2004-03-11T18274013966"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "result" : "7.36",
+               "resultTime" : "2004-03-11T18274013966",
+               "phenomenonTime" : "2004-03-11T18274013966"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(50-light)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(50-voltage)",
+            "content" : {
+               "resultTime" : "2004-03-11T18274013966",
+               "result" : "2.54901",
+               "phenomenonTime" : "2004-03-11T18274013966"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190456317308",
+               "result" : "26.2996",
+               "resultTime" : "2004-03-21T190456317308"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(51-temperature)"
+         },
+         {
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190456317308",
+               "result" : "43.4857",
+               "resultTime" : "2004-03-21T190456317308"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(51-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(51-light)",
+            "content" : {
+               "resultTime" : "2004-03-21T190456317308",
+               "result" : "0.46",
+               "phenomenonTime" : "2004-03-21T190456317308"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190456317308",
+               "result" : "2.36622",
+               "resultTime" : "2004-03-21T190456317308"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(51-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(52-temperature)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190613641614",
+               "result" : "22.1052",
+               "phenomenonTime" : "2004-03-21T190613641614"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(52-humidity)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "44.846",
+               "resultTime" : "2004-03-21T190613641614",
+               "phenomenonTime" : "2004-03-21T190613641614"
+            }
+         },
+         {
+            "content" : {
+               "result" : "0.92",
+               "resultTime" : "2004-03-21T190613641614",
+               "phenomenonTime" : "2004-03-21T190613641614"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(52-light)"
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "result" : "2.34751",
+               "resultTime" : "2004-03-21T190613641614",
+               "phenomenonTime" : "2004-03-21T190613641614"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(52-voltage)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(53-temperature)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190429596926",
+               "resultTime" : "2004-03-21T190429596926",
+               "result" : "21.38"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190429596926",
+               "result" : "46.5249",
+               "resultTime" : "2004-03-21T190429596926"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(53-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(53-light)",
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "resultTime" : "2004-03-21T190243060759",
+               "result" : "0.46",
+               "phenomenonTime" : "2004-03-21T190243060759"
+            }
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(53-voltage)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190429596926",
+               "result" : "2.36622",
+               "resultTime" : "2004-03-21T190429596926"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190256249587",
+               "result" : "21.3604",
+               "resultTime" : "2004-03-21T190256249587"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(54-temperature)"
+         },
+         {
+            "content" : {
+               "result" : "47.8315",
+               "resultTime" : "2004-03-21T190256249587",
+               "phenomenonTime" : "2004-03-21T190256249587"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(54-humidity)"
+         },
+         {
+            "ID" : "http://localhost:8500/v1.0/Datastreams(54-light)",
+            "content" : {
+               "phenomenonTime" : "2004-03-21T190256249587",
+               "result" : "0.46",
+               "resultTime" : "2004-03-21T190256249587"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            }
+         },
+         {
+            "content" : {
+               "resultTime" : "2004-03-21T190256249587",
+               "result" : "2.34751",
+               "phenomenonTime" : "2004-03-21T190256249587"
+            },
+            "metadata" : {
+               "type" : "sensor_reading"
+            },
+            "ID" : "http://localhost:8500/v1.0/Datastreams(54-voltage)"
+         }
+      ]
+   },
+   "type" : "IoTContent_message"
+}
