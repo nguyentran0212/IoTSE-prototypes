@@ -26,8 +26,8 @@ ENV REDIS_PORT 6379
 ENV REDIS_DB 0
 ENV MONGO_HOST localhost
 ENV MONGO_PORT 27017
-ENV STORAGE_TASK_NAME store
-ENV SEARCHER_TASK_NAME search
+ENV STORAGE_TASK_NAME store_reading
+ENV SEARCHER_TASK_NAME search_reading
 
 # Run main.py when the container launches
 CMD gunicorn -w 4 -b 0.0.0.0:5000 main:app

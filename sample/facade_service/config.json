@@ -6,7 +6,7 @@
             "default_value" : "localhost:8080"
         },
         {
-            "var_name" : "HOST_HOST_PORT",
+            "var_name" : "HOST_ADDR_PORT",
             "param_name" : "self_host_port",
             "default_value" : "http://localhost:5000"
         },
@@ -29,13 +29,18 @@
             "var_name" : "FACADE_TASK_NAME",
             "param_name" : "facade_task_name",
             "default_value" : "get_aggregated_result"
+        },
+        {
+            "var_name" : "SEARCH_WORKFLOW_NAME",
+            "param_name" : "search_workflow_name",
+            "default_value" : "iotse_prototype_interlaced"
         }
     ],
     "services" : [
             {"service" : 
                 {
-                    "class" : "AggregateService",
-                    "module" : "aggregate_service_sample",
+                    "class" : "SimpleFacadeService",
+                    "module" : "lib.facade_service_simple",
                     "package" : "",
                     "args" : [],
                     "kwargs" : {}

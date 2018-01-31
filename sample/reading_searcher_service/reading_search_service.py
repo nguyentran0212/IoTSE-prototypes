@@ -12,30 +12,16 @@ import pickle
 from pymongo import MongoClient
 from pprint import pprint
 
-class SampleData():
-    def __init__(self):
-        query1 = entity.Query("query_1", {"temperature" : "q234", "type" : "sensor data"})
-        result_set = entity.ResultSet("query_1", query1.to_dict())
-        iot_content1 = entity.IoTContent("resource_1", {"type" : "sensor data"}, {"temperature" : 234})
-        iot_content2 = entity.IoTContent("resource_2", {"type" : "sensor data"}, {"temperature" : 234})
-        iot_content3 = entity.IoTContent("resource_3", {"type" : "sensor data"}, {"temperature" : 234})
-        result_set.add_IoTContent_score(iot_content1, {"score" : 50})
-        result_set.add_IoTContent_score(iot_content2, {"score" : 10})
-        result_set.add_IoTContent_score(iot_content3, {"score" : 70})
-        self.result_set = result_set
-
-#sample_data = SampleData()
-
 class SearcherService(AbsSearcherService):
     def __init__(self, redis_host = "localhost", redis_port = 6379, redis_db = 0, mongo_host = "localhost", mongo_port = 27017, query_type = "reading_query", *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.query_type = query_type
         # Create client to redis database
-        self.redis_client = redis.StrictRedis(host = redis_host, port = redis_port, db = redis_db)
-        self.redis_query_id_key = "searcher:query_id:"
+        self.redis_client = redis.StrictRedis(host = redis_host, port = int(redis_port), db = redis_db)
+        self.redis_query_id_key = "reading_searcher:query_id:"
         # Create client to mongo database
-        self.mongo_client = MongoClient(host = mongo_host, port = mongo_port)
-        self.mongo_db = self.mongo_client.sensor_metadata_db
+        self.mongo_client = MongoClient(host = mongo_host, port = int(mongo_port))
+        self.mongo_db = self.mongo_client.sensor_readings_db
         self.mongo_col = self.mongo_db.sensor_readings_collection
     
     def _query(self, query, wf_id = ""):

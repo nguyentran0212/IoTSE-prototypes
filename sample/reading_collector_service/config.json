@@ -6,7 +6,7 @@
             "default_value" : "localhost:8080"
         },
         {
-            "var_name" : "HOST_HOST_PORT",
+            "var_name" : "HOST_ADDR_PORT",
             "param_name" : "self_host_port",
             "default_value" : "http://localhost:5000"
         },
@@ -28,7 +28,7 @@
         {
             "var_name" : "COLLECTOR_TASK_NAME",
             "param_name" : "collector_task_name",
-            "default_value" : "collect_metadata"
+            "default_value" : "collect_reading"
         }
     ],
     "services" : [

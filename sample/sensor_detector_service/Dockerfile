@@ -24,9 +24,9 @@ ENV HOST_HOST_PORT http://localhost:5000
 ENV REDIS_HOST localhost
 ENV REDIS_POST 6379
 ENV REDIS_DB 0
-ENV WSR_HOST_PORT http://localhost:8500/v1.0
-ENV DETECTOR_TASK_NAME detect_source
+ENV WSP_HOST_PORT http://localhost:8500/v1.0
+ENV DETECTOR_TASK_NAME detect_sensor
 
 # Run main.py when the container launches
-CMD gunicorn -w 4 -b 0.0.0.0:5000 main:app
+CMD gunicorn -w 4 -b 0.0.0.0:5000 --error-logfile - main:app
 

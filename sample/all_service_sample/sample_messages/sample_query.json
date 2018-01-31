@@ -1,4 +1,9 @@
 {
-    "type" : "temperature",
-    "value" : "30"
+            "reading_query" : {
+            	"content.result" : "128.8"
+            },
+            "metadata_query" : {
+               "content.ObservedProperty.name" : "Luminance",
+               "content.unitOfMeasurement.name" : "lux"
+            }
 }

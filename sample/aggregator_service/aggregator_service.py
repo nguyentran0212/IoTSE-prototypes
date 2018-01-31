@@ -17,6 +17,8 @@ class AggregateService(AbsAggregatorService):
         super().__init__(*args, **kwargs)
         self.redis_client = redis.StrictRedis(host = redis_host, port = redis_port, db = redis_db)
         self.redis_query_id_key = "aggregator:query_id:"
+        self.redis_agg_result_key = "aggregator:results:query_id:"
+        
     
     def _store(self, result_set, wf_id = ""):
 #        self.addResultURL(result_url, wf_id)
@@ -29,6 +31,17 @@ class AggregateService(AbsAggregatorService):
         """
         This function returns the set of results generated from a previous query
         """
+        """
+        If the aggregation has been done previously, return the existing results.
+        """
+        p_aggregated_results = self.redis_client.get(self.redis_agg_result_key + query_ID)
+        if p_aggregated_results is not None:
+            print("Load the previously aggregated results")
+            return pickle.loads(p_aggregated_results)
+        
+        """
+        Otherwise, do the processing ... save the aggregated results, and return
+        """
         p_current_sets = self.redis_client.get(self.redis_query_id_key + query_ID)
         current_sets = None
         try:
@@ -36,6 +49,13 @@ class AggregateService(AbsAggregatorService):
         except TypeError:
             return None
         result_set = self.process(current_sets)
+        
+        """
+        ... save the aggregated results, and return
+        """
+        p_result_set = pickle.dumps(result_set)
+        self.redis_client.set(self.redis_agg_result_key + query_ID, p_result_set)
+        print("Generate aggregated results, save to the database, and return")
         return result_set
 
     def process(self, result_sets):
@@ -46,7 +66,7 @@ class AggregateService(AbsAggregatorService):
             """
             Use the first set of results as the seed for comparison
             """
-            for result in result_sets[0].results[:2]:
+            for result in result_sets[0].results:
                 agg_results_dict[result[0]["ID"]] = [(result[0], result[1])]
     
             """
@@ -73,6 +93,12 @@ class AggregateService(AbsAggregatorService):
                     agg_score = {"aggregated_score" : [pair[1] for pair in item[1]]}
                     agg_result_set.add_IoTContent_score(IoTContent=agg_iot_content, score=agg_score)
             
+            # Write to file to find out why this service not always return results
+            with open("test_aggregator.txt", "a") as f:
+                f.write("===========================\n")
+                f.write("in process()\n")
+                f.write("result_sets" + str(result_sets))
+                f.write("agg_result_set" + str(agg_result_set))
             return agg_result_set
         
         

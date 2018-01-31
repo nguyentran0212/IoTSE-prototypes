@@ -7,7 +7,6 @@
       "query" : {
          "query_content" : {
             "reading_query" : {
-            	"content.result" : "0.92"
             },
             "metadata_query" : {
                "content.ObservedProperty.name" : "Luminance",

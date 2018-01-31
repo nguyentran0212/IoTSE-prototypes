@@ -12,7 +12,7 @@ from pprint import pprint
 class StorageService(AbsStorageService):
     def __init__(self, mongo_host = "localhost", mongo_port = 27017, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.mongo_client = MongoClient(host = mongo_host, port = mongo_port)
+        self.mongo_client = MongoClient(host = mongo_host, port = int(mongo_port))
         self.mongo_db = self.mongo_client.sensor_metadata_db
         self.mongo_col = self.mongo_db.sensor_metadata_collection
     

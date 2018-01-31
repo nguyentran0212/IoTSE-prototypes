@@ -6,7 +6,7 @@
             "default_value" : "localhost:8080"
         },
         {
-            "var_name" : "HOST_HOST_PORT",
+            "var_name" : "HOST_ADDR_PORT",
             "param_name" : "self_host_port",
             "default_value" : "http://localhost:5000"
         },
@@ -26,8 +26,8 @@
             "default_value" : 0
         },
         {
-            "var_name" : "WSR_HOST_PORT",
-            "param_name" : "wsr_host_port",
+            "var_name" : "WSP_HOST_PORT",
+            "param_name" : "wsp_host_port",
             "default_value" : "http://localhost:8500/v1.0"
         },
         {

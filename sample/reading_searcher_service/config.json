@@ -6,7 +6,7 @@
             "default_value" : "localhost:8080"
         },
         {
-            "var_name" : "HOST_HOST_PORT",
+            "var_name" : "HOST_ADDR_PORT",
             "param_name" : "self_host_port",
             "default_value" : "http://localhost:5000"
         },
@@ -38,12 +38,12 @@
         {
             "var_name" : "STORAGE_TASK_NAME",
             "param_name" : "storage_task_name",
-            "default_value" : "store_readings"
+            "default_value" : "store_reading"
         },
         {
             "var_name" : "SEARCHER_TASK_NAME",
             "param_name" : "searcher_task_name",
-            "default_value" : "search_readings"
+            "default_value" : "search_reading"
         }
     ],
     "services" : [

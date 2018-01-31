@@ -28,7 +28,6 @@ from lib.conductor_meta_client import ConductorMetaClient
 #    cs.boot()
 
 cs_builder = ComponentServiceBuilder()
-#    cs = cs_builder.build("config.json", conn_to_conductor=True)
 cs = cs_builder.build("config.json", conn_to_conductor=True)
 cs.boot()
 app = cs.app
