@@ -1,9 +1,0 @@
-{
-            "reading_query" : {
-            	"content.result" : "1-light"
-            },
-            "metadata_query" : {
-               "content.ObservedProperty.name" : "Luminance",
-               "content.unitOfMeasurement.name" : "lux"
-            }
-}
