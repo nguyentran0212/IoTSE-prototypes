@@ -37,12 +37,20 @@ class SearcherService(AbsSearcherService):
         
         # Perform the search to find sensors
         result_curs = self.mongo_col.find(query_content)
+        mongo_count = self.mongo_col.find(query_content).count()
+        self.redis_client.set("DEBUG_reading_mongo_count:" + query_id, mongo_count)
+        
         result_set = entity.ResultSet(query_ID = query_id, query_instance = query)
+        self.redis_client.set("DEBUG_reading_init_result_count:" + query_id, len(result_set.results))
+        ite_num = 0
         for result in result_curs:
             score = {"score" : 100}
             iot_content = entity.IoTContent(iot_content_dict=result)
             result_set.add_IoTContent_score(iot_content.to_dict(), score)
+            ite_num += 1
 
+        self.redis_client.set("DEBUG_reading_ite_count:" + query_id, ite_num)
+        self.redis_client.set("DEBUG_reading_result_count:" + query_id, len(result_set.results))
         # Store result set in Redis and return a key for client to retrieve results
         p_result_set = pickle.dumps(result_set)
         self.redis_client.set(self.redis_query_id_key + query_id, p_result_set)
