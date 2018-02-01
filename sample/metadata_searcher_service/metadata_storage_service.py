@@ -21,13 +21,12 @@ class StorageService(AbsStorageService):
         Retrieve set of resources at the targeted URL and insert them
         to the database
         """
+        self.mongo_col.create_index("ID", unique = True)
+        
         for iot_content in iot_contents: 
             temp_dict = {"ID" : iot_content.ID, "metadata" : {"type" : "sensor_metadata"}, "content" : iot_content.content}
-#            pprint(temp_dict)
-            self.mongo_col.insert_one(temp_dict)
-#        with open("test_cookie.txt", "a") as f:
-#            f.write("From %s: %s\n" % (self, wf_id))
-#        print([i.to_dict() for i in iot_contents])
+            self.mongo_col.update_one({"ID" : iot_content.ID}, {"$set" : temp_dict}, upsert = True)
+
         return "stored collected sensor metadata"
     
     def _getSingleResource(self, res_id, wf_id = ""):

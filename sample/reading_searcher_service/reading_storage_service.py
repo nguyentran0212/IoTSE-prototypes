@@ -18,16 +18,21 @@ class StorageService(AbsStorageService):
     
     def _insert(self, iot_contents, wf_id = ""):
         """
-        Retrieve set of resources at the targeted URL and insert them
-        to the database
+        Insert a set of IoT content entities into database.
+        Manually parse observation value from string to float before inserting.
+        Skip over results that cannot be parse
         """
+        self.mongo_col.create_index("ID", unique = True)
+        
+#        iot_contents_dict = []
         for iot_content in iot_contents: 
+            try:
+                iot_content.content["result"] = float(iot_content.content["result"])
+            except KeyError:
+                continue
             temp_dict = {"ID" : iot_content.ID, "metadata" : {"type" : "sensor_reading"}, "content" : iot_content.content}
-#            pprint(temp_dict)
-            self.mongo_col.insert_one(temp_dict)
-#        with open("test_cookie.txt", "a") as f:
-#            f.write("From %s: %s\n" % (self, wf_id))
-#        print([i.to_dict() for i in iot_contents])
+            self.mongo_col.update_one({"ID" : iot_content.ID}, {"$set" : temp_dict}, upsert = True)
+
         return "stored collected sensor metadata"
     
     def _getSingleResource(self, res_id, wf_id = ""):
