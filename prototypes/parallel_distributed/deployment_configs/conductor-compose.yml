@@ -4,7 +4,7 @@ services:
   conductor-server:
     environment:
       - CONFIG_PROP=config.properties
-    image: conductor:server
+    image: gentran1991/iotse-prototype:conductor-server
     build:
       context: ../
       dockerfile: docker/server/Dockerfile
@@ -19,7 +19,7 @@ services:
   conductor-ui:
     environment:
       - WF_SERVER=http://conductor-server:8080/api/
-    image: conductor:ui
+    image: gentran1991/iotse-prototype:conductor-ui
     build:
       context: ../
       dockerfile: docker/ui/Dockerfile
@@ -43,4 +43,4 @@ services:
 networks:
   iotse:
     external:
-      name: iotse-prototype_iotse
+      name: iotse-base_iotse
