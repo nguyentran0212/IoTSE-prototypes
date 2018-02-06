@@ -1,0 +1,128 @@
+version: '3.2'
+services:
+  aggregator:
+    image: gentran1991/iotse-prototype:aggregator
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://aggregator:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - AGG_ADD_RESULT_TASK_NAME=add_result
+      - AGG_AGGREGATE_TASK_NAME=aggregate
+    ports:
+      - 5001:5000
+    networks:
+      - iotse
+      
+  reading-searcher:
+    image: gentran1991/iotse-prototype:reading-searcher
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://reading-searcher:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - MONGO_HOST=mongo
+      - MONGO_PORT=27017
+      - STORAGE_TASK_NAME=store_reading
+      - SEARCHER_TASK_NAME=search_reading
+    ports:
+      - 5002:5000
+    networks:
+      - iotse
+      
+  metadata-searcher:
+    image: gentran1991/iotse-prototype:metadata-searcher
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://metadata-searcher:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - MONGO_HOST=mongo
+      - MONGO_PORT=27017
+      - STORAGE_TASK_NAME=store_metadata
+      - SEARCHER_TASK_NAME=search_metadata
+    ports:
+      - 5003:5000
+    networks:
+      - iotse
+      
+  facade:
+    image: gentran1991/iotse-prototype:facade
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://facade:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - FACADE_TASK_NAME=get_aggregated_result
+      - SEARCH_WORKFLOW_NAME=iotse_prototype_interlaced
+    ports:
+      - 5000:5000
+    networks:
+      - iotse
+      
+  metadata-collector:
+    image: gentran1991/iotse-prototype:metadata-collector
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://metadata-collector:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - COLLECTOR_TASK_NAME=collect_metadata
+    ports:
+      - 5004:5000
+    networks:
+      - iotse
+      
+  reading-collector:
+    image: gentran1991/iotse-prototype:reading-collector
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://reading-collector:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - COLLECTOR_TASK_NAME=collect_reading
+    ports:
+      - 5005:5000
+    networks:
+      - iotse
+      
+  source-detector:
+    image: gentran1991/iotse-prototype:source-detector
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://source-detector:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - WSP_HOST_PORT=http://wsp:8500/v1.0
+      - DETECTOR_TASK_NAME=detect_source
+    ports:
+      - 5006:5000
+    networks:
+      - iotse
+      
+  sensor-detector:
+    image: gentran1991/iotse-prototype:sensor-detector
+    environment:
+      - WF_SERVER=conductor-server:8080
+      - HOST_ADDR_PORT=http://sensor-detector:5000
+      - REDIS_HOST=redis
+      - REDIS_POST=6379
+      - REDIS_DB=0
+      - DETECTOR_TASK_NAME=detect_sensor
+    ports:
+      - 5007:5000
+    networks:
+      - iotse
+
+           
+networks:
+  iotse:
+    external:
+      name: iotse-base_iotse

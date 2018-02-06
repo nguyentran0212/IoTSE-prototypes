@@ -1,0 +1,166 @@
+[{
+    "name": "detect_source",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "detect_sensor",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "collect_reading",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "collect_metadata",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "store_reading",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "search_reading",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "store_metadata",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "search_metadata",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "add_result",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "aggregate",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+},
+{
+    "name": "get_aggregated_result",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+        "iotse_msg"
+        ],
+    "outputKeys": [
+        "iotse_msg"
+        ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 5,
+    "responseTimeoutSeconds": 3600
+}
+]

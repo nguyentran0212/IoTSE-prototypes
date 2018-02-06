@@ -1,0 +1,21 @@
+{
+   "workflow_id" : "",
+   "msg" : "List of detected content id",
+   "sender" : "http://localhost:5000/api/new-cont-ids/wsr",
+   "type" : "IoTContent_message",
+   "misc" : null,
+   "payload" : {
+      "iot_contents" : [
+         {
+            "ID" : "wsr_1",
+            "content" : {
+               "url" : "http://localhost:8500/v1.0"
+            },
+            "metadata" : {
+               "type" : "sensor source"
+            }
+         }
+      ]
+   }
+}
+

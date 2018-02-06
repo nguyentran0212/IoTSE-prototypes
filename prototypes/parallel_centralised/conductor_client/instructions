@@ -1,0 +1,2 @@
+Usage:
+python conductor_meta_client.py <conductor-server URL:8080/api> <path-to-task-defs.json> <path-to-wf-defs.json>

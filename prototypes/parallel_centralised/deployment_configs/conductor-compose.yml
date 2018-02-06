@@ -1,0 +1,46 @@
+# Docker compose for netflix conductor + elasticsearch + dynomite
+version: '3'
+services:
+  conductor-server:
+    environment:
+      - CONFIG_PROP=config.properties
+    image: conductor:server
+    build:
+      context: ../
+      dockerfile: docker/server/Dockerfile
+    ports:
+      - 8080:8080
+    links:
+      - elasticsearch:es
+      - dynomite:dyno1
+    networks:
+      - iotse
+
+  conductor-ui:
+    environment:
+      - WF_SERVER=http://conductor-server:8080/api/
+    image: conductor:ui
+    build:
+      context: ../
+      dockerfile: docker/ui/Dockerfile
+    ports:
+      - 5050:5000
+    links:
+      - conductor-server
+    networks:
+      - iotse
+
+  dynomite:
+    image: v1r3n/dynomite
+    networks:
+      - iotse
+
+  elasticsearch:
+    image: elasticsearch:2.4
+    networks:
+      - iotse
+    
+networks:
+  iotse:
+    external:
+      name: iotse-base_iotse

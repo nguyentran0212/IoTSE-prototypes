@@ -1,0 +1,27 @@
+version: '3.2'
+services: 
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    networks:
+      - iotse
+      
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    networks:
+      - iotse
+      
+  wsp:
+    image: gentran1991/wsp:wsp
+    ports:
+      - 8500:8500
+    networks:
+      - iotse
+           
+networks:
+  iotse:
+    driver: overlay
+    attachable: true

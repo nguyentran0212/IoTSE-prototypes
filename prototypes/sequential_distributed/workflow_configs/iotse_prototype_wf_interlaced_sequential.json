@@ -1,0 +1,99 @@
+{
+    "name": "iotse_prototype_interlaced",
+    "description": "Sample workflow. Invoke only detector service",
+    "version": 1,
+    "tasks": [
+        {
+            "name": "detect_source",
+            "taskReferenceName": "detect_source",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${workflow.input.iotse_msg}"
+                }
+        },
+        {
+            "name": "detect_sensor",
+            "taskReferenceName": "detect_sensor",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${detect_source.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "collect_metadata",
+            "taskReferenceName": "collect_metadata",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${detect_sensor.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "collect_reading",
+            "taskReferenceName": "collect_reading",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${detect_sensor.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "store_metadata",
+            "taskReferenceName": "store_metadata",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${collect_metadata.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "search_metadata",
+            "taskReferenceName": "search_metadata",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${workflow.input.iotse_msg}"
+                }
+        },
+        {
+            "name": "store_reading",
+            "taskReferenceName": "store_reading",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${collect_reading.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "search_reading",
+            "taskReferenceName": "search_reading",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${workflow.input.iotse_msg}"
+                }
+        },
+        {
+            "name": "add_result",
+            "taskReferenceName": "add_result_metadata",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${search_metadata.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "add_result",
+            "taskReferenceName": "add_result_reading",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${search_reading.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "get_aggregated_result",
+            "taskReferenceName": "get_aggregated_result",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${add_result_reading.output.iotse_msg}"
+                }
+        }
+    ],
+    "outputParameters": {
+        "iotse_msg": "${get_aggregated_result.output.iotse_msg}"
+        },
+    "schemaVersion": 2
+}
