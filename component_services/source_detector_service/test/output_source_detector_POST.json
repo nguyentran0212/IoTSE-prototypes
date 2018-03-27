@@ -1,0 +1,1 @@
+{"type": "callback_message", "sender": "http://localhost:5000/api/new-cont-ids", "workflow_id": "", "msg": "Invoked discovery process. Poll the returned URL for results.", "payload": {"url": "http://localhost:5000/api/new-cont-ids/wsp"}, "misc": null}

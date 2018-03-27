@@ -31,7 +31,7 @@ class DetectorService(AbsDetectorService):
             iot content objects. If there is no iot content object, it cannot process
             """
             return None
-        
+
         source_urls = []
         try:
             """

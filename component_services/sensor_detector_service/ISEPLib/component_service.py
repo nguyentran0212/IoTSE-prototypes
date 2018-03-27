@@ -13,12 +13,13 @@ class ComponentService:
     def __init__(self, self_host_port, wf_host_port, flask_listen_host = "0.0.0.0"):
         self.app = Flask(__name__)
         self.api = Api(self.app)
-        # Flask host denotes the interface on which Flask listens
-        self.flask_listen_host = flask_listen_host
         # host is the IP address of the host serving this component service
         self.self_host_port = self_host_port
         self.wf_host_port = "http://%s/api" % wf_host_port
         self.conductor_worker_clients = []
+        
+        # Flask host denotes the interface on which Flask listens
+        self.flask_listen_host = flask_listen_host
         
     def add_resource_to_api(self, serv_type, serv, env_vars):
         """

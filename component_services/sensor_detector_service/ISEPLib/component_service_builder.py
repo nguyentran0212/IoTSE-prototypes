@@ -95,6 +95,7 @@ class ComponentServiceBuilder:
         """
         env_vars = self.load_env_vars(config_json_path)
         self_host_port = env_vars["self_host_port"]
+        print(self_host_port)
         wf_host_port = env_vars["wf_host_port"]
         services = self.load_services(config_json_path, wf_host_port = wf_host_port, env_vars = env_vars)
         print("Finished loading %d services..." % len(services))

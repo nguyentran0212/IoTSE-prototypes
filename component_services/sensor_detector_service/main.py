@@ -29,6 +29,7 @@ from ISEPLib.conductor_meta_client import ConductorMetaClient
 
 cs_builder = ComponentServiceBuilder()
 #    cs = cs_builder.build("config.json", conn_to_conductor=True)
-cs = cs_builder.build("config.json", conn_to_conductor=True)
+cs = cs_builder.build("config.json", conn_to_conductor=False)
 cs.boot()
 app = cs.app
+app.run()
