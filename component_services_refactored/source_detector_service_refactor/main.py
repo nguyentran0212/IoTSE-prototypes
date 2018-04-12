@@ -10,7 +10,6 @@ from IoTSE_framework.serv_type_detector.detector_builder import DetectorBuilder 
 
 cs_builder = ComponentServiceBuilder()
 #    cs = cs_builder.build("config.json", conn_to_conductor=True)
-cs = cs_builder.build("config.json", conn_to_conductor=False)
+cs = cs_builder.build("config.json", conn_to_conductor=True)
 cs.boot()
 app = cs.app
-app.run()

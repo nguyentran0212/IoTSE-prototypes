@@ -11,7 +11,7 @@ import requests
 import json
 
 class AbsConductorClient(ABC):
-    def __init__(self, host_addr, rest_endpoint, task_name, wf_server_addr, *args, **kwargs):
+    def __init__(self, host_addr, rest_endpoint, wf_server_addr, task_name = "", *args, **kwargs):
         """
         Conductor client polls a workflow server to new instance of a specific task
         that it handles. It invoke the service handling this task, and returns its

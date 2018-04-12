@@ -11,7 +11,7 @@ ADD . /app
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Install netflix-conductor client from the included source
-WORKDIR /app/ISEPLib/netflix-conductor-client
+WORKDIR /app/IoTSE_framework/cs_kernel/netflix-conductor-client
 RUN python setup.py install
 WORKDIR /app
 

@@ -10,6 +10,14 @@ from ..cs_kernel.abs_conductor_client import AbsConductorClient as AbsConductorC
 
         
 class CollectorConductorClient(AbsConductorClient):    
+    def __init__(self, host_addr, rest_endpoint, wf_server_addr, collector_task_name = None, *args, **kwargs):
+        if collector_task_name is None:
+            """
+            if a custom task name is given, use the custom name
+            otherwise, use the default name
+            """
+            collector_task_name = "collect"
+        super().__init__(host_addr, rest_endpoint, wf_server_addr, task_name = collector_task_name)
     
     def _invoke_service(self, task):
         send_data = task["inputData"]["iotse_msg"]

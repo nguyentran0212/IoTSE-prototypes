@@ -10,6 +10,14 @@ from ..cs_kernel.abs_conductor_client import AbsConductorClient as AbsConductorC
 
         
 class SearcherConductorClient(AbsConductorClient):    
+    def __init__(self, host_addr, rest_endpoint, wf_server_addr, searcher_task_name = None, *args, **kwargs):
+        if searcher_task_name is None:
+            """
+            if a custom task name is given, use the custom name
+            otherwise, use the default name
+            """
+            searcher_task_name = "search"
+        super().__init__(host_addr, rest_endpoint, wf_server_addr, task_name = searcher_task_name)
     
     def _invoke_service(self, task):
         send_data = task["inputData"]["iotse_msg"]

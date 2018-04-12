@@ -109,7 +109,7 @@ class ComponentServiceBuilder:
         wf_host_port = env_vars["wf_host_port"]
         services = self.load_services(config_json_path, wf_host_port = wf_host_port, env_vars = env_vars)
         print("Finished loading %d services..." % len(services))
-        cs = ComponentService(self_host_port, wf_host_port, self.mapping)
+        cs = ComponentService(self_host_port, wf_host_port, mapping = self.mapping)
         for service in services:
             cs.add_resource_to_api(service.serv_type, service, env_vars)
             if conn_to_conductor:

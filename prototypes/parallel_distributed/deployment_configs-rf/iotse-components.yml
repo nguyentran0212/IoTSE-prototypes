@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   aggregator:
-    image: gentran1991/iotse-prototype:aggregator
+    image: gentran1991/iotse-prototype:aggregator-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://aggregator:5000
@@ -19,7 +19,7 @@ services:
       - iotse
       
   reading-searcher:
-    image: gentran1991/iotse-prototype:reading-searcher
+    image: gentran1991/iotse-prototype:reading-searcher-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://reading-searcher:5000
@@ -39,7 +39,7 @@ services:
       - iotse
       
   metadata-searcher:
-    image: gentran1991/iotse-prototype:metadata-searcher
+    image: gentran1991/iotse-prototype:metadata-searcher-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://metadata-searcher:5000
@@ -59,7 +59,7 @@ services:
       - iotse
       
   facade:
-    image: gentran1991/iotse-prototype:facade
+    image: gentran1991/iotse-prototype:facade-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://facade:5000
@@ -98,7 +98,7 @@ services:
       
       
   metadata-collector:
-    image: gentran1991/iotse-prototype:metadata-collector
+    image: gentran1991/iotse-prototype:metadata-collector-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://metadata-collector:5000
@@ -115,7 +115,7 @@ services:
       - iotse
       
   reading-collector:
-    image: gentran1991/iotse-prototype:reading-collector
+    image: gentran1991/iotse-prototype:reading-collector-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://reading-collector:5000
@@ -132,7 +132,7 @@ services:
       - iotse
       
   source-detector:
-    image: gentran1991/iotse-prototype:source-detector
+    image: gentran1991/iotse-prototype:source-detector-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://source-detector:5000
@@ -150,7 +150,7 @@ services:
       - iotse
       
   sensor-detector:
-    image: gentran1991/iotse-prototype:sensor-detector
+    image: gentran1991/iotse-prototype:sensor-detector-rf
     environment:
       - WF_SERVER=conductor-server:8080
       - HOST_ADDR_PORT=http://sensor-detector:5000

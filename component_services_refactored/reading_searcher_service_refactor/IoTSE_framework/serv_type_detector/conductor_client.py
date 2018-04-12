@@ -8,8 +8,15 @@ Created on Wed Apr 11 18:24:08 2018
 
 from ..cs_kernel.abs_conductor_client import AbsConductorClient as AbsConductorClient
 
-        
 class DetectorConductorClient(AbsConductorClient):    
+    def __init__(self, host_addr, rest_endpoint, wf_server_addr, detector_task_name = None, *args, **kwargs):
+        if detector_task_name is None:
+            """
+            if a custom task name is given, use the custom name
+            otherwise, use the default name
+            """
+            detector_task_name = "detect"
+        super().__init__(host_addr, rest_endpoint, wf_server_addr, task_name = detector_task_name)
     
     def _invoke_service(self, task):
         send_data = task["inputData"]["iotse_msg"]

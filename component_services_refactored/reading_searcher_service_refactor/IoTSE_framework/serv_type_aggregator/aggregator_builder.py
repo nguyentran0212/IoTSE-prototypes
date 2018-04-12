@@ -14,5 +14,5 @@ class AggregatorBuilder(BaseBuilder):
     def __init__(self):
         mapping = {"aggregator" : 
             ([(resources.AggregatorResultsPost, "/api/agg_results"), (resources.AggregatorResultsGet, "/api/agg_results/<query_id>")],
-    [(conductor_client.AggregatorConductorClient, "/api/agg_results")])}
+    [(conductor_client.AggregatorAddResultConductorClient, "/api/agg_results")])}
         super().__init__(mapping)
