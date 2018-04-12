@@ -1,0 +1,10 @@
+{
+   "type" : "callback_message",
+   "sender" : "http://localhost:5000/api/queries",
+   "workflow_id" : "",
+   "msg" : "Finished query. Find the result at the included URL",
+   "misc" : null,
+   "payload" : {
+      "url" : "http://localhost:5002/api/results/query_1"
+   }
+}

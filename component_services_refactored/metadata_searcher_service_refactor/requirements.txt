@@ -1,0 +1,7 @@
+flask
+flask_restful
+requests
+pyyaml
+redis
+gunicorn
+pymongo

@@ -17,17 +17,14 @@ Created on Tue Jan  2 14:27:41 2018
 #from lib.resources import *
 #import lib.serv_res_worker_mapping as mapping
 
-from ISEPLib.component_service_builder import ComponentServiceBuilder
-from importlib import import_module
-from ISEPLib.conductor_meta_client import ConductorMetaClient
+from IoTSE_framework.serv_type_storage.storage_builder import StorageBuilder as StorageBuilder
+from IoTSE_framework.serv_type_searcher.searcher_builder import SearcherBuilder as SearcherBuilder
 
-#if __name__ == "__main__":
-#    cs_builder = ComponentServiceBuilder()
-##    cs = cs_builder.build("config.json", conn_to_conductor=True)
-#    cs = cs_builder.build("config.json", conn_to_conductor=False)
-#    cs.boot()
 
-cs_builder = ComponentServiceBuilder()
+storage_builder = StorageBuilder()
+searcher_builder = SearcherBuilder()
+cs_builder = storage_builder.combine(searcher_builder)
+
 cs = cs_builder.build("config.json", conn_to_conductor=False)
 cs.boot()
 app = cs.app

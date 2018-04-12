@@ -1,0 +1,22 @@
+{
+   "workflow_id" : "",
+   "misc" : null,
+   "type" : "query_message",
+   "sender" : "sender",
+   "payload" : {
+      "query" : {
+         "query_content" : {
+            "reading_query" : {
+            	"content.result" : { "$lt": 100.0 }
+            },
+            "metadata_query" : {
+               "content.ObservedProperty.name" : "Luminance",
+               "content.unitOfMeasurement.name" : "lux"
+            }
+         },
+         "query_ID" : "query_1"
+      }
+   },
+   "msg" : "msg"
+}
+

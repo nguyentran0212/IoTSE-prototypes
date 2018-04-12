@@ -1,0 +1,10 @@
+{
+   "misc" : null,
+   "sender" : "http://localhost:5000/api/res-contents",
+   "type" : "callback_message",
+   "msg" : "Invoked collection process. Poll the returned URL for results.",
+   "workflow_id" : "",
+   "payload" : {
+      "url" : "http://localhost:5001/api/res-contents/8e91f755-794a-4ecb-aa0d-74e106a3821a"
+   }
+}

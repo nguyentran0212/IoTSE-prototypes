@@ -1,0 +1,10 @@
+{
+   "sender" : "http://localhost:5000/api/new-cont-ids",
+   "payload" : {
+      "url" : "http://localhost:5000/api/new-cont-ids/eb8fb18c-3502-4d98-af18-1a0779794189"
+   },
+   "msg" : "Invoked discovery process. Poll the returned URL for results.",
+   "type" : "callback_message",
+   "misc" : null,
+   "workflow_id" : ""
+}

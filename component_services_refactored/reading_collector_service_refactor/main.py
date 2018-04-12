@@ -17,10 +17,7 @@ Created on Tue Jan  2 14:27:41 2018
 #from lib.resources import *
 #import lib.serv_res_worker_mapping as mapping
 
-from ISEPLib.component_service_builder import ComponentServiceBuilder
-from importlib import import_module
-from ISEPLib.conductor_meta_client import ConductorMetaClient
-
+from IoTSE_framework.serv_type_collector.collector_builder import CollectorBuilder as ComponentServiceBuilder
 #if __name__ == "__main__":
 #    cs_builder = ComponentServiceBuilder()
 ##    cs = cs_builder.build("config.json", conn_to_conductor=True)
@@ -28,6 +25,7 @@ from ISEPLib.conductor_meta_client import ConductorMetaClient
 #    cs.boot()
 
 cs_builder = ComponentServiceBuilder()
+#    cs = cs_builder.build("config.json", conn_to_conductor=True)
 cs = cs_builder.build("config.json", conn_to_conductor=False)
 cs.boot()
 app = cs.app
