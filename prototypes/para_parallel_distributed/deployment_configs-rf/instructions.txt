@@ -1,0 +1,12 @@
+Content:
+ - iotse-components.yml = docker compose file for 8 component services of the IoTSE, 2 instances of Redis database, 1 instance of MongoDB, and also 1 instance of WSP (IoT platform for virtualising sensors) for simplicity. 
+ - conductor-compose.yml = docker compose file for conductor server, ui, elastic search and and dynamic databases. This file is based on the instructions from Netflix's Conductor project.
+ 
+Starting up commands:
+1. docker stack deploy -c iotse-components.yml iotse-prototype
+2. docker-compose -f conductor-compose.yml up -d
+
+Note:
+ - Avoid changing name of stacks, as names of networks which are hardcoded into compose files vary with the name of stack.
+ - Due to unknown bug in Netflix's Conductor, it cannot be started as a stack. Docker compose is used until a solution is found.
+ - The Conductor must be loaded with workflow definition before the IoTSE prototype is ready. Use the conductor clients provided in this package to push workflow definitions to Conductor.

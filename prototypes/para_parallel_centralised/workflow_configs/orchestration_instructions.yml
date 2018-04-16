@@ -1,0 +1,14 @@
+wf_server:
+    address : http://localhost:8080/api
+    
+task_def:
+    file : ./task_def.json
+    
+event_handler_def:
+    file : ./event_handler_def.json
+    
+wf_def:
+    - file : ./wf_def_discovery.json
+      start : 1
+    - file : ./wf_def_search_para.json
+      start : 0

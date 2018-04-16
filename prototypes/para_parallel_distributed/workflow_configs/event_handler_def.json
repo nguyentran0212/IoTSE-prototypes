@@ -1,0 +1,16 @@
+{
+	"name" : "Restart the discovery workflow",
+	"event" : "conductor:iotse_prototype_discovery:event",
+	"condition" : true,
+	"actions" : [
+		{
+			"action" : "start_workflow",
+			"start_workflow" : {
+				"name": "iotse_prototype_discovery",
+				"version": 1,
+				"input" : {}
+			}
+		}
+	],
+	"active" : true
+}
