@@ -1,0 +1,35 @@
+{
+    "name": "iotse_prototype_search_seq",
+    "description": "Sequential search workflow. Responsible for resolving queries",
+    "version": 1,
+    "tasks": [
+        {
+            "name": "search_reading",
+            "taskReferenceName": "search_reading",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${workflow.input.iotse_msg}"
+                }
+        },
+        {
+            "name": "add_result",
+            "taskReferenceName": "add_result_reading",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${search_reading.output.iotse_msg}"
+                }
+        },
+        {
+            "name": "get_aggregated_result",
+            "taskReferenceName": "get_aggregated_result",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "iotse_msg": "${add_result_reading.output.iotse_msg}"
+                }
+        }
+    ],
+    "outputParameters": {
+        "iotse_msg": "${get_aggregated_result.output.iotse_msg}"
+        },
+    "schemaVersion": 2
+}
